@@ -58,10 +58,15 @@ This tap uses OAuth2 client credentials authentication. You can obtain API crede
 
 ## Supported Streams
 
-| Stream       | Replication Key | Primary Key | Description                                           |
-|--------------|-----------------|-------------|-------------------------------------------------------|
-| `companies`  | `modified`      | `id`        | List of companies from the 7shifts API                |
-| `locations`  | `modified`      | `id`        | List of locations for the configured company         |
+| Stream            | Replication Key | Primary Key | Description                                                                 |
+|-------------------|-----------------|-------------|-----------------------------------------------------------------------------|
+| `companies`       | `modified`      | `id`        | List of companies from the 7shifts API                                     |
+| `locations`       | `modified`      | `id`        | List of locations for the configured company                               |
+| `departments`     | `modified`      | `id`        | List of departments for the configured company                             |
+| `shifts`          | `modified`      | `id`        | List of shifts for the configured company                                  |
+| `users`           | `modified`      | `id`        | List of users for the configured company                                   |
+| `user_wages`      | —               | `user_id`   | Wages per user (current and upcoming); child of `users`                    |
+| `user_assignments`| —               | `user_id`   | Location, department, and role assignments per user; child of `users`      |
 
 ## Usage
 

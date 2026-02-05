@@ -5,11 +5,24 @@ from typing import List
 from hotglue_singer_sdk import Stream, Tap
 from hotglue_singer_sdk import typing as th
 
-from tap_7shifts.streams import CompaniesStream, LocationsStream
+from tap_7shifts.streams import (
+    CompaniesStream,
+    DepartmentsStream,
+    LocationsStream,
+    ShiftsStream,
+    UserAssignmentsStream,
+    UserWagesStream,
+    UsersStream,
+)
 
 STREAM_TYPES = [
     CompaniesStream,
     LocationsStream,
+    DepartmentsStream,
+    ShiftsStream,
+    UsersStream,
+    UserWagesStream,
+    UserAssignmentsStream,
 ]
 
 
