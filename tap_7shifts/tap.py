@@ -49,7 +49,7 @@ class Tap7Shifts(Tap):
         ),
         th.Property(
             "company_id",
-            th.IntegerType,
+            th.StringType,
             description="7shifts company ID (used for company-scoped endpoints such as locations).",
             required=True,
         ),
