@@ -2,7 +2,6 @@
 
 from typing import Any, Dict, Optional
 
-import requests
 from hotglue_singer_sdk.streams import RESTStream
 from memoization import cached
 
@@ -15,6 +14,7 @@ class SevenShiftsStream(RESTStream):
     url_base = "https://api.7shifts.com/v2/"
     primary_keys = ["id"]
     replication_key = "modified"
+    replication_format = "%Y-%m-%d"
     records_jsonpath = "$.data[*]"
     next_page_token_jsonpath = "$.meta.cursor.next"
     limit = 500
@@ -45,5 +45,5 @@ class SevenShiftsStream(RESTStream):
         if self.replication_key and context is not None:
             start_date = self.get_starting_time(context, is_inclusive=True)
             if start_date:
-                params["modified_since"] = start_date.strftime("%Y-%m-%d")
+                params["modified_since"] = start_date.strftime(self.replication_format)
         return params
