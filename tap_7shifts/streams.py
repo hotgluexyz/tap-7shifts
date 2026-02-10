@@ -124,6 +124,39 @@ class DepartmentsStream(SevenShiftsStream):
     ).to_dict()
 
 
+class RolesStream(SevenShiftsStream):
+    """Roles stream - list of roles for the company (company_id from config)."""
+
+    name = "roles"
+    path = "company/{company_id}/roles"
+
+    schema = th.PropertiesList(
+        th.Property("id", th.IntegerType),
+        th.Property("company_id", th.IntegerType),
+        th.Property("location_id", th.IntegerType),
+        th.Property("department_id", th.IntegerType),
+        th.Property("color", th.StringType),
+        th.Property("num_stations", th.IntegerType),
+        th.Property("name", th.StringType),
+        th.Property("job_code", th.StringType),
+        th.Property("sort", th.IntegerType),
+        th.Property(
+            "stations",
+            th.ArrayType(
+                th.ObjectType(
+                    th.Property("id", th.IntegerType),
+                    th.Property("role_id", th.IntegerType),
+                    th.Property("station_number", th.IntegerType),
+                    th.Property("name", th.StringType),
+                )
+            ),
+        ),
+        th.Property("created", th.DateTimeType),
+        th.Property("modified", th.DateTimeType),
+        th.Property("is_tipped_role", th.BooleanType),
+    ).to_dict()
+
+
 class ShiftsStream(SevenShiftsStream):
     """Shifts stream - list of shifts for the company (company_id from config)."""
 
@@ -172,6 +205,49 @@ class ShiftsStream(SevenShiftsStream):
                     th.Property("length", th.IntegerType),
                     th.Property("break_type_id", th.IntegerType),
                     th.Property("type", th.StringType),
+                )
+            ),
+        ),
+    ).to_dict()
+
+
+class TimePunchesStream(SevenShiftsStream):
+    """Time punches stream - list of time punches for the company (company_id from config)."""
+
+    name = "time_punches"
+    path = "company/{company_id}/time_punches"
+    replication_format = "%Y-%m-%dT%H:%M:%SZ"
+
+    schema = th.PropertiesList(
+        th.Property("id", th.IntegerType),
+        th.Property("company_id", th.IntegerType),
+        th.Property("shift_id", th.IntegerType),
+        th.Property("user_id", th.IntegerType),
+        th.Property("editable_punch", th.BooleanType),
+        th.Property("role_id", th.IntegerType),
+        th.Property("location_id", th.IntegerType),
+        th.Property("department_id", th.IntegerType),
+        th.Property("hourly_wage", th.IntegerType),
+        th.Property("approved", th.BooleanType),
+        th.Property("clocked_in", th.DateTimeType),
+        th.Property("clocked_out", th.DateTimeType),
+        th.Property("notes", th.StringType),
+        th.Property("auto_clocked_out", th.BooleanType),
+        th.Property("clocked_in_offline", th.BooleanType),
+        th.Property("clocked_out_offline", th.BooleanType),
+        th.Property("tips", th.IntegerType),
+        th.Property("created", th.DateTimeType),
+        th.Property("modified", th.DateTimeType),
+        th.Property("deleted", th.BooleanType),
+        th.Property("pos_type", th.StringType),
+        th.Property(
+            "breaks",
+            th.ArrayType(
+                th.ObjectType(
+                    th.Property("id", th.IntegerType),
+                    th.Property("time_punch_id", th.IntegerType),
+                    th.Property("start", th.DateTimeType),
+                    th.Property("end", th.DateTimeType),
                 )
             ),
         ),
