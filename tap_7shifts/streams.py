@@ -250,6 +250,7 @@ class TimePunchesStream(SevenShiftsStream):
                     th.Property("paid", th.BooleanType),
                     th.Property("in", th.DateTimeType),
                     th.Property("out", th.DateTimeType),
+                    th.Property("deleted", th.BooleanType),
                 )
             ),
         ),
