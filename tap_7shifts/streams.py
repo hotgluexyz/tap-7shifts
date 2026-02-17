@@ -245,9 +245,11 @@ class TimePunchesStream(SevenShiftsStream):
             th.ArrayType(
                 th.ObjectType(
                     th.Property("id", th.IntegerType),
-                    th.Property("time_punch_id", th.IntegerType),
-                    th.Property("start", th.DateTimeType),
-                    th.Property("end", th.DateTimeType),
+                    th.Property("user_id", th.IntegerType),
+                    th.Property("custom_break_id", th.IntegerType),
+                    th.Property("paid", th.BooleanType),
+                    th.Property("in", th.DateTimeType),
+                    th.Property("out", th.DateTimeType),
                 )
             ),
         ),
