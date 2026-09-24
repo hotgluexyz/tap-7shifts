@@ -1,15 +1,24 @@
 """REST client handling, including SevenShiftsStream base class."""
 
-from typing import Any, Dict, Optional
+from __future__ import annotations
 
+from typing import Any, Callable, Dict, Generator, Optional
+
+import backoff
+import requests
+from hotglue_singer_sdk.helpers._network import giveup_oserror_not_transient_network
 from hotglue_singer_sdk.streams import RESTStream
 from memoization import cached
 
 from tap_7shifts.auth import SevenShiftsAuthenticator
+from tap_7shifts.rate_limit import PerSecondRateLimiter
+
+# Shared by every stream in the tap process (parallel child sync uses one token).
+_REQUEST_RATE_LIMITER = PerSecondRateLimiter()
 
 
 class SevenShiftsStream(RESTStream):
-    """7shifts stream class (base)."""
+    """Base stream with tap-wide request pacing and 429 retry policy."""
 
     url_base = "https://api.7shifts.com/v2/"
     primary_keys = ["id"]
@@ -47,3 +56,29 @@ class SevenShiftsStream(RESTStream):
             if start_date:
                 params["modified_since"] = start_date.strftime(self.replication_format)
         return params
+
+    def _request(
+        self, prepared_request: requests.PreparedRequest, context: Optional[dict]
+    ) -> requests.Response:
+        """Gate each HTTP attempt (including backoff retries) on the shared per-second limiter."""
+        _REQUEST_RATE_LIMITER.wait_turn()
+        return super()._request(prepared_request, context)
+
+    def backoff_wait_generator(self) -> Callable[..., Generator[int, Any, None]]:
+        """Wait long enough to clear 7shifts' documented one-minute throttle on 429."""
+        return backoff.expo(factor=5, max_value=60)  # type: ignore[return-value]
+
+    def backoff_max_tries(self) -> int:
+        """Allow retries to span the one-minute block after sustained 429s."""
+        return 8
+
+    def request_decorator(self, func: Callable) -> Callable:
+        """Retry with deterministic waits so jitter does not under-shoot the throttle window."""
+        return backoff.on_exception(
+            self.backoff_wait_generator,
+            self.backoff_exceptions(),
+            max_tries=self.backoff_max_tries,
+            on_backoff=self.backoff_handler,
+            giveup=giveup_oserror_not_transient_network,
+            jitter=None,
+        )(func)
