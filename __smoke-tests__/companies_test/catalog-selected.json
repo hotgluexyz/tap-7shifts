@@ -1,0 +1,392 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "companies",
+      "replication_key": "modified",
+      "replication_method": "INCREMENTAL",
+      "key_properties": [
+        "id"
+      ],
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "uuid": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "country": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "photo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "trial": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "plan_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "created": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "modified": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "expires": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "days_to_expire": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "converted": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pos": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "start_week_on": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "meta": {
+            "properties": {
+              "onboarding_complete": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "buy_now": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "employee_count_range": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "signup_utm_source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "signup_form_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "utm_medium": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "utm_source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "signup_content_source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "icp_segment": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ai_importer_invoked": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "declared_number_of_locations": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "marketing_site_visitor_uuid": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "pricing_test_aggregate_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "trial_checklist_stored_locally": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              }
+            },
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "active": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "coupon": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "companies",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "uuid"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "country"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "photo"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "trial"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "plan_id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "created"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "modified"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "expires"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "days_to_expire"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "converted"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "pos"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "status"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "start_week_on"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "meta"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "active"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "coupon"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "table-key-properties": [
+              "id"
+            ],
+            "valid-replication-keys": [
+              "modified"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

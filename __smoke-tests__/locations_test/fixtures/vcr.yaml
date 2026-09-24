@@ -1,0 +1,172 @@
+interactions:
+- request:
+    body: grant_type=client_credentials&scope=v1_access+companies%3Aread+locations%3Aread
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '209'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.34.2
+    method: POST
+    uri: https://app.7shifts.com/oauth2/token
+  response:
+    body:
+      string: '{"token_type": "-Fallback-scrubbed-kBgEEN", "expires_in": 8920, "access_token":
+        "<scrubbed-access-token>"}'
+    headers:
+      CF-RAY:
+      - a40a068ca900ba21-SEA
+      Cache-Control:
+      - no-store,no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 25 Sep 2026 12:27:54 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '620'
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      permissions-policy:
+      - interest-cohort=()
+      pragma:
+      - no-cache
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 933e182243bf1fed34f41a0bc0f96745/7201926164840832525
+      x-served-by:
+      - rollout-5469f4b8f8-q9929-070e1e3
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+      x-company-guid:
+      - <scrubbed-guid>
+    method: GET
+    uri: https://api.7shifts.com/v2/company/1/locations?limit=500&modified_since=2025-02-15
+  response:
+    body:
+      string: '{"data": [{"id": 1000, "company_id": 1, "name": "Fake-Nicholas Bennett",
+        "country": "-Fallback-scrubbed-CK", "state": "-Fallback-scrubbed-dp", "city":
+        "Fake-East Zachary", "formatted_address": "-Fallback-scrubbed-ReRmSEnwcOWSdcWHYrRPikpkrHdxekGHTXynJrrvawmEJGQ",
+        "lat": 61.20313, "lng": -125.91942, "place_id": "-Fallback-scrubbed-AifjDVzjIaYwiGFLFgdYkobkZXd",
+        "timezone": "-Fallback-scrubbed-MoQfbNBUFAXvqbuAMci", "timezone_updated":
+        true, "hash": "-Fallback-scrubbed-SacDykINrtpMoZAtYSrUfGEYNEaUSdZp", "mapping_id":
+        "", "department_based_budget": true, "holiday_pay": false, "auto_send_log_book_time":
+        null, "mon_hours_close": "-Fallback-scrubbed-NYQaMzLo", "tue_hours_close":
+        "-Fallback-scrubbed-NYQaMzLo", "wed_hours_close": "-Fallback-scrubbed-NYQaMzLo",
+        "thu_hours_close": "-Fallback-scrubbed-NYQaMzLo", "fri_hours_close": "-Fallback-scrubbed-NYQaMzLo",
+        "sat_hours_close": "-Fallback-scrubbed-NYQaMzLo", "sun_hours_close": "-Fallback-scrubbed-NYQaMzLo",
+        "mon_hours_open": "-Fallback-scrubbed-kEAfzUqQ", "tue_hours_open": "-Fallback-scrubbed-kEAfzUqQ",
+        "wed_hours_open": "-Fallback-scrubbed-kEAfzUqQ", "thu_hours_open": "-Fallback-scrubbed-kEAfzUqQ",
+        "fri_hours_open": "-Fallback-scrubbed-kEAfzUqQ", "sat_hours_open": "-Fallback-scrubbed-kEAfzUqQ",
+        "sun_hours_open": "-Fallback-scrubbed-kEAfzUqQ", "mon_is_closed": true, "tue_is_closed":
+        true, "wed_is_closed": true, "thu_is_closed": true, "fri_is_closed": true,
+        "sat_is_closed": true, "sun_is_closed": true, "shift_feedback": false, "message":
+        "", "deleted": true, "created": "1971-10-25T04:21:22+00:00", "modified": "1971-10-25T04:21:22+00:00"},
+        {"id": 1001, "company_id": 1, "name": "Fake-Charles Frazier", "country": "-Fallback-scrubbed-CK",
+        "state": "-Fallback-scrubbed-dp", "city": "Fake-East Zachary", "formatted_address":
+        "-Fallback-scrubbed-ReRmSEnwcOWSdcWHYrRPikpkrHdxekGHTXynJrrvawmEJGQ", "lat":
+        61.20313, "lng": -125.91942, "place_id": "-Fallback-scrubbed-AifjDVzjIaYwiGFLFgdYkobkZXd",
+        "timezone": "-Fallback-scrubbed-MoQfbNBUFAXvqbuAMci", "timezone_updated":
+        true, "hash": "-Fallback-scrubbed-OaKykhdxHiRjojLGNXEasBHhSoSjsrYt", "mapping_id":
+        "", "department_based_budget": true, "holiday_pay": false, "auto_send_log_book_time":
+        null, "mon_hours_close": "-Fallback-scrubbed-NYQaMzLo", "tue_hours_close":
+        "-Fallback-scrubbed-NYQaMzLo", "wed_hours_close": "-Fallback-scrubbed-NYQaMzLo",
+        "thu_hours_close": "-Fallback-scrubbed-NYQaMzLo", "fri_hours_close": "-Fallback-scrubbed-NYQaMzLo",
+        "sat_hours_close": "-Fallback-scrubbed-NYQaMzLo", "sun_hours_close": "-Fallback-scrubbed-NYQaMzLo",
+        "mon_hours_open": "-Fallback-scrubbed-kEAfzUqQ", "tue_hours_open": "-Fallback-scrubbed-kEAfzUqQ",
+        "wed_hours_open": "-Fallback-scrubbed-kEAfzUqQ", "thu_hours_open": "-Fallback-scrubbed-kEAfzUqQ",
+        "fri_hours_open": "-Fallback-scrubbed-kEAfzUqQ", "sat_hours_open": "-Fallback-scrubbed-kEAfzUqQ",
+        "sun_hours_open": "-Fallback-scrubbed-kEAfzUqQ", "mon_is_closed": true, "tue_is_closed":
+        true, "wed_is_closed": true, "thu_is_closed": true, "fri_is_closed": true,
+        "sat_is_closed": true, "sun_is_closed": true, "shift_feedback": false, "message":
+        "", "deleted": true, "created": "1971-10-25T04:21:22+00:00", "modified": "1971-10-25T04:21:22+00:00"}],
+        "meta": {"cursor": {"current": "scrubbed-cursor-1", "prev": null, "next":
+        null, "count": 2}}, "object": "-Fallback-scrubbed-uwPZxhKSC"}'
+    headers:
+      CF-RAY:
+      - a40a06915b9ad7ae-SEA
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 25 Sep 2026 12:27:54 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '3731'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - dd8589de22c98bd4bddefd4538f9002b/9222309363296671330
+      x-served-by:
+      - rollout-5469f4b8f8-js6bk-070e1e3
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

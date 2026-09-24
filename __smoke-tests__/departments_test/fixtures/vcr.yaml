@@ -1,0 +1,146 @@
+interactions:
+- request:
+    body: grant_type=client_credentials&scope=v1_access+companies%3Aread+locations%3Aread
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '209'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.34.2
+    method: POST
+    uri: https://app.7shifts.com/oauth2/token
+  response:
+    body:
+      string: '{"token_type": "-Fallback-scrubbed-AsFrcO", "expires_in": 4177, "access_token":
+        "<scrubbed-access-token>"}'
+    headers:
+      CF-RAY:
+      - a40a0679dd21252d-SEA
+      Cache-Control:
+      - no-store,no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 25 Sep 2026 12:27:51 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '620'
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      permissions-policy:
+      - interest-cohort=()
+      pragma:
+      - no-cache
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 19cfb2aa3620c8d6e9465ded1a44c57d/5035802211555994079
+      x-served-by:
+      - rollout-5469f4b8f8-4cwqg-070e1e3
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+      x-company-guid:
+      - <scrubbed-guid>
+    method: GET
+    uri: https://api.7shifts.com/v2/company/1/departments?limit=500&modified_since=2025-02-15
+  response:
+    body:
+      string: '{"data": [{"id": 1000, "company_id": 1, "location_id": 1001, "name":
+        "Fake-Tiffany Obrien", "default": false, "deleted": null, "created": "1972-01-19T03:34:39+00:00",
+        "modified": "1983-09-09T20:36:09+00:00"}, {"id": 1002, "company_id": 1, "location_id":
+        1001, "name": "Fake-Jeffrey Wall", "default": false, "deleted": null, "created":
+        "1972-01-19T03:34:39+00:00", "modified": "1972-01-19T03:34:39+00:00"}, {"id":
+        1003, "company_id": 1, "location_id": 1004, "name": "Fake-Rhonda Rogers",
+        "default": false, "deleted": null, "created": "1972-01-19T03:34:39+00:00",
+        "modified": "1972-01-19T03:34:39+00:00"}, {"id": 1005, "company_id": 1, "location_id":
+        1004, "name": "Fake-Jeffrey Wall", "default": false, "deleted": null, "created":
+        "1972-01-19T03:34:39+00:00", "modified": "1972-01-19T03:34:39+00:00"}], "meta":
+        {"cursor": {"current": "scrubbed-cursor-1", "prev": null, "next": null, "count":
+        4}}, "object": "-Fallback-scrubbed-XZByKxzweIY"}'
+    headers:
+      CF-RAY:
+      - a40a067dfce5eb3e-SEA
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 25 Sep 2026 12:27:51 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1507'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 7c85d3749b007d347339fccfb79c5a9d/1187234137537163161
+      x-served-by:
+      - rollout-5469f4b8f8-cpx5q-070e1e3
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1
