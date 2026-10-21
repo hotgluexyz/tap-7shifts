@@ -36,7 +36,11 @@ def test_access_token_support_uses_each_connector_credentials(tmp_path):
     first_config_path = tmp_path / "first-config.json"
     first_config_path.write_text(json.dumps(SAMPLE_CONFIG))
     second_config_path = tmp_path / "second-config.json"
-    second_config = {**SAMPLE_CONFIG, "client_id": "second-client-id"}
+    second_config = {
+        **SAMPLE_CONFIG,
+        "client_id": "second-client-id",
+        "client_secret": "second-client-secret",
+    }
     second_config_path.write_text(json.dumps(second_config))
     first_tap = Tap7Shifts(config=first_config_path)
     second_tap = Tap7Shifts(config=second_config_path)
@@ -57,6 +61,8 @@ def test_access_token_support_uses_each_connector_credentials(tmp_path):
         }
 
     assert request_token.call_args_list[0].kwargs["data"]["client_id"] == "test-client-id"
+    assert request_token.call_args_list[0].kwargs["data"]["client_secret"] == "test-client-secret"
     assert request_token.call_args_list[1].kwargs["data"]["client_id"] == "second-client-id"
+    assert request_token.call_args_list[1].kwargs["data"]["client_secret"] == "second-client-secret"
     assert json.loads(first_config_path.read_text())["access_token"] == "first-access-token"
     assert json.loads(second_config_path.read_text())["access_token"] == "second-access-token"
