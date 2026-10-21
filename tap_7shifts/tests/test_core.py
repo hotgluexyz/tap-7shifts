@@ -31,29 +31,32 @@ def test_standard_tap_features(standard_tap_test):
     standard_tap_test()
 
 
-def test_access_token_support_fetches_oauth_token(tmp_path):
-    """Access-token support uses 7shifts' OAuth token endpoint."""
-    config_path = tmp_path / "config.json"
-    config_path.write_text(json.dumps(SAMPLE_CONFIG))
-    tap = Tap7Shifts(config=config_path)
-    token_response = MagicMock()
-    token_response.json.return_value = {"access_token": "seven-shifts-access-token"}
+def test_access_token_support_uses_each_connector_credentials(tmp_path):
+    """Access-token support uses a connector-bound OAuth authenticator."""
+    first_config_path = tmp_path / "first-config.json"
+    first_config_path.write_text(json.dumps(SAMPLE_CONFIG))
+    second_config_path = tmp_path / "second-config.json"
+    second_config = {**SAMPLE_CONFIG, "client_id": "second-client-id"}
+    second_config_path.write_text(json.dumps(second_config))
+    first_tap = Tap7Shifts(config=first_config_path)
+    second_tap = Tap7Shifts(config=second_config_path)
+    first_response = MagicMock()
+    first_response.json.return_value = {"access_token": "first-access-token"}
+    second_response = MagicMock()
+    second_response.json.return_value = {"access_token": "second-access-token"}
 
     with patch(
-        "hotglue_singer_sdk.authenticators.requests.post", return_value=token_response
+        "hotglue_singer_sdk.authenticators.requests.post",
+        side_effect=[first_response, second_response],
     ) as request_token:
-        assert Tap7Shifts.fetch_access_token(tap) == {
-            "access_token": "seven-shifts-access-token"
+        assert Tap7Shifts.fetch_access_token(first_tap) == {
+            "access_token": "first-access-token"
+        }
+        assert Tap7Shifts.fetch_access_token(second_tap) == {
+            "access_token": "second-access-token"
         }
 
-    request_token.assert_called_once_with(
-        "https://app.7shifts.com/oauth2/token",
-        data={
-            "grant_type": "client_credentials",
-            "client_id": "test-client-id",
-            "client_secret": "test-client-secret",
-            "scope": "v1_access companies:read locations:read",
-        },
-        auth=None,
-    )
-    assert json.loads(config_path.read_text())["access_token"] == "seven-shifts-access-token"
+    assert request_token.call_args_list[0].kwargs["data"]["client_id"] == "test-client-id"
+    assert request_token.call_args_list[1].kwargs["data"]["client_id"] == "second-client-id"
+    assert json.loads(first_config_path.read_text())["access_token"] == "first-access-token"
+    assert json.loads(second_config_path.read_text())["access_token"] == "second-access-token"

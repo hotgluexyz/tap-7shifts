@@ -10,8 +10,8 @@ from hotglue_singer_sdk.helpers._util import utc_now
 DEFAULT_OAUTH_SCOPES = "v1_access companies:read locations:read"
 
 
-class SevenShiftsAuthenticator(OAuthAuthenticator, metaclass=SingletonMeta):
-    """Authenticator for 7shifts OAuth2 client_credentials."""
+class SevenShiftsOAuthAuthenticator(OAuthAuthenticator):
+    """Base authenticator for 7shifts OAuth2 client credentials."""
 
     @property
     def oauth_request_body(self) -> dict:
@@ -22,6 +22,10 @@ class SevenShiftsAuthenticator(OAuthAuthenticator, metaclass=SingletonMeta):
             "client_secret": self.config["client_secret"],
             "scope": self.oauth_scopes or DEFAULT_OAUTH_SCOPES,
         }
+
+
+class SevenShiftsAuthenticator(SevenShiftsOAuthAuthenticator, metaclass=SingletonMeta):
+    """Singleton authenticator used by normal stream syncs."""
 
     def update_access_token(self) -> None:
         """Fetch a new access token and keep it in memory only (do not persist to config)."""
@@ -49,3 +53,7 @@ class SevenShiftsAuthenticator(OAuthAuthenticator, metaclass=SingletonMeta):
             auth_endpoint="https://app.7shifts.com/oauth2/token",
             oauth_scopes=DEFAULT_OAUTH_SCOPES,
         )
+
+
+class SevenShiftsAccessTokenAuthenticator(SevenShiftsOAuthAuthenticator):
+    """Connector-bound authenticator used by the access-token command."""

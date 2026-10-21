@@ -5,7 +5,7 @@ from typing import List
 from hotglue_singer_sdk import Stream, Tap
 from hotglue_singer_sdk import typing as th
 
-from tap_7shifts.auth import SevenShiftsAuthenticator
+from tap_7shifts.auth import SevenShiftsAccessTokenAuthenticator
 from tap_7shifts.streams import (
     CompaniesStream,
     DepartmentsStream,
@@ -71,7 +71,7 @@ class Tap7Shifts(Tap):
 
     @classmethod
     def access_token_support(cls, connector=None):
-        return SevenShiftsAuthenticator, "https://app.7shifts.com/oauth2/token"
+        return SevenShiftsAccessTokenAuthenticator, "https://app.7shifts.com/oauth2/token"
 
 
 if __name__ == "__main__":
