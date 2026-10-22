@@ -8,6 +8,7 @@ from hotglue_singer_sdk.helpers._util import utc_now
 
 # Default scopes for 7shifts API; scope format: "v1_access {ADDITIONAL_SCOPES}"
 DEFAULT_OAUTH_SCOPES = "v1_access companies:read locations:read"
+TOKEN_URL = "https://app.7shifts.com/oauth2/token"
 
 
 class SevenShiftsOAuthAuthenticator(OAuthAuthenticator):
@@ -50,10 +51,6 @@ class SevenShiftsAuthenticator(SevenShiftsOAuthAuthenticator, metaclass=Singleto
     def create_for_stream(cls, stream) -> "SevenShiftsAuthenticator":
         return cls(
             stream=stream,
-            auth_endpoint="https://app.7shifts.com/oauth2/token",
+            auth_endpoint=TOKEN_URL,
             oauth_scopes=DEFAULT_OAUTH_SCOPES,
         )
-
-
-class SevenShiftsAccessTokenAuthenticator(SevenShiftsOAuthAuthenticator):
-    """Connector-bound authenticator used by the access-token command."""
