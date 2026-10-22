@@ -60,11 +60,11 @@ def test_access_token_support_uses_each_connector_credentials(tmp_path):
             "access_token": "second-access-token"
         }
 
-    assert request_token.call_args_list[0].args[0] == "https://app.7shifts.com/oauth2/token"
-    assert request_token.call_args_list[1].args[0] == "https://app.7shifts.com/oauth2/token"
-    assert request_token.call_args_list[0].kwargs["data"]["client_id"] == "test-client-id"
-    assert request_token.call_args_list[0].kwargs["data"]["client_secret"] == "test-client-secret"
-    assert request_token.call_args_list[1].kwargs["data"]["client_id"] == "second-client-id"
-    assert request_token.call_args_list[1].kwargs["data"]["client_secret"] == "second-client-secret"
+    assert request_token.call_args_list[0][0][0] == "https://app.7shifts.com/oauth2/token"
+    assert request_token.call_args_list[1][0][0] == "https://app.7shifts.com/oauth2/token"
+    assert request_token.call_args_list[0][1]["data"]["client_id"] == "test-client-id"
+    assert request_token.call_args_list[0][1]["data"]["client_secret"] == "test-client-secret"
+    assert request_token.call_args_list[1][1]["data"]["client_id"] == "second-client-id"
+    assert request_token.call_args_list[1][1]["data"]["client_secret"] == "second-client-secret"
     assert json.loads(first_config_path.read_text())["access_token"] == "first-access-token"
     assert json.loads(second_config_path.read_text())["access_token"] == "second-access-token"
