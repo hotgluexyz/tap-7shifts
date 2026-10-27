@@ -45,9 +45,15 @@ def test_access_token_support_uses_each_connector_credentials(tmp_path):
     first_tap = Tap7Shifts(config=first_config_path)
     second_tap = Tap7Shifts(config=second_config_path)
     first_response = MagicMock()
-    first_response.json.return_value = {"access_token": "first-access-token"}
+    first_response.json.return_value = {
+        "access_token": "first-access-token",
+        "expires_in": 3600,
+    }
     second_response = MagicMock()
-    second_response.json.return_value = {"access_token": "second-access-token"}
+    second_response.json.return_value = {
+        "access_token": "second-access-token",
+        "expires_in": 3600,
+    }
 
     with patch(
         "hotglue_singer_sdk.authenticators.requests.post",
