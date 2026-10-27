@@ -2,6 +2,7 @@
 
 import datetime
 import json
+import time
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -55,6 +56,7 @@ def test_access_token_support_uses_each_connector_credentials(tmp_path):
         "expires_in": 3600,
     }
 
+    earliest_expiry = int(time.time()) + 3600
     with patch(
         "hotglue_singer_sdk.authenticators.requests.post",
         side_effect=[first_response, second_response],
@@ -72,5 +74,10 @@ def test_access_token_support_uses_each_connector_credentials(tmp_path):
     assert request_token.call_args_list[0][1]["data"]["client_secret"] == "test-client-secret"
     assert request_token.call_args_list[1][1]["data"]["client_id"] == "second-client-id"
     assert request_token.call_args_list[1][1]["data"]["client_secret"] == "second-client-secret"
-    assert json.loads(first_config_path.read_text())["access_token"] == "first-access-token"
-    assert json.loads(second_config_path.read_text())["access_token"] == "second-access-token"
+    first_config = json.loads(first_config_path.read_text())
+    second_config = json.loads(second_config_path.read_text())
+    latest_expiry = int(time.time()) + 3600
+    assert first_config["access_token"] == "first-access-token"
+    assert second_config["access_token"] == "second-access-token"
+    assert earliest_expiry <= first_config["expires_in"] <= latest_expiry
+    assert earliest_expiry <= second_config["expires_in"] <= latest_expiry
