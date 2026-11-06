@@ -1,0 +1,225 @@
+interactions:
+- request:
+    body: grant_type=client_credentials&scope=v1_access+companies%3Aread+locations%3Aread
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '79'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.34.2
+    method: POST
+    uri: https://app.7shifts.com/oauth2/token
+  response:
+    body:
+      string: '{"token_type": "-Fallback-scrubbed-IxOkKW", "expires_in": 3599, "access_token":
+        "eyJ***"}'
+    headers:
+      CF-RAY:
+      - a566b4b21d6ed985-GRU
+      Cache-Control:
+      - no-store,no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 06 Nov 2026 20:04:11 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '89'
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      permissions-policy:
+      - interest-cohort=()
+      pragma:
+      - no-cache
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 858cfbc918c977556ff972bf7c333514/14381448162946706198
+      x-served-by:
+      - rollout-689469f6-9p426-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/roles?limit=500&modified_since=2026-01-02
+  response:
+    body:
+      string: '{"data": [{"id": 2714621, "company_id": 5065, "location_id": 4678,
+        "department_id": 2904, "color": "-Fallback-scrubbed-xIBwkr", "num_stations":
+        2132, "name": "Fake-Cassandra Jackson", "job_code": null, "sort": 8142, "stations":
+        [{"id": 2080133, "role_id": 35, "station_number": 8142, "name": "Fake-Christina
+        Bell"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp", "modified":
+        "2026-02-09T22:56:31+0000", "is_tipped_role": false}, {"id": 2714622, "company_id":
+        5065, "location_id": 4678, "department_id": 2904, "color": "-Fallback-scrubbed-vvwKcX",
+        "num_stations": 2132, "name": "Fake-Michael Terry", "job_code": null, "sort":
+        4242, "stations": [{"id": 2080134, "role_id": 5295, "station_number": 8142,
+        "name": "Fake-Emily Green"}, {"id": 2080135, "role_id": 5295, "station_number":
+        4242, "name": "Fake-Dominique Torres"}, {"id": 2080136, "role_id": 5295, "station_number":
+        776, "name": "Fake-Angela Waters"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-02-09T22:56:31+0000", "is_tipped_role": false}, {"id": 2714623,
+        "company_id": 5065, "location_id": 4678, "department_id": 2904, "color": "-Fallback-scrubbed-mzBwyk",
+        "num_stations": 2132, "name": "Fake-Robert Yates", "job_code": null, "sort":
+        2269, "stations": [{"id": 2080137, "role_id": 7784, "station_number": 8142,
+        "name": "Fake-Emily Green"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-02-09T22:56:31+0000", "is_tipped_role": false}, {"id": 2714624,
+        "company_id": 5065, "location_id": 4678, "department_id": 2904, "color": "-Fallback-scrubbed-GwFCOM",
+        "num_stations": 2132, "name": "Fake-Edward Fuller", "job_code": null, "sort":
+        776, "stations": [{"id": 2080138, "role_id": 8625, "station_number": 8142,
+        "name": "Fake-Angela Waters"}, {"id": 2080139, "role_id": 8625, "station_number":
+        4242, "name": "Fake-Albert Benitez"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-02-09T22:56:31+0000", "is_tipped_role": false}, {"id": 2714625,
+        "company_id": 5065, "location_id": 4678, "department_id": 1453, "color": "-Fallback-scrubbed-TuDHSa",
+        "num_stations": 2132, "name": "Fake-Jessica Powell", "job_code": null, "sort":
+        8142, "stations": [{"id": 2080140, "role_id": 5060, "station_number": 8142,
+        "name": "Fake-William Day"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-02-04T22:21:36+0000", "is_tipped_role": false}, {"id": 2714626,
+        "company_id": 5065, "location_id": 4678, "department_id": 1453, "color": "-Fallback-scrubbed-xdKIqv",
+        "num_stations": 2132, "name": "Fake-Edward Fuller", "job_code": null, "sort":
+        4242, "stations": [{"id": 2080141, "role_id": 3984, "station_number": 8142,
+        "name": "Fake-Melanie Cooper"}, {"id": 2080142, "role_id": 3984, "station_number":
+        4242, "name": "Fake-William Day"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-02-04T22:21:36+0000", "is_tipped_role": false}, {"id": 2714627,
+        "company_id": 5065, "location_id": 4678, "department_id": 1453, "color": "-Fallback-scrubbed-mzBwyk",
+        "num_stations": 2132, "name": "Fake-Shannon Lucas", "job_code": null, "sort":
+        776, "stations": [{"id": 2080143, "role_id": 3235, "station_number": 8142,
+        "name": "Fake-Joseph Boone"}, {"id": 2080144, "role_id": 3235, "station_number":
+        4242, "name": "Fake-Robert Byrd"}, {"id": 2080145, "role_id": 3235, "station_number":
+        776, "name": "Fake-Melanie Cooper"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-02-04T22:21:36+0000", "is_tipped_role": false}, {"id": 2714628,
+        "company_id": 5065, "location_id": 4678, "department_id": 1453, "color": "-Fallback-scrubbed-jsiIzn",
+        "num_stations": 2132, "name": "Fake-Timothy Kelly", "job_code": null, "sort":
+        2269, "stations": [{"id": 2080146, "role_id": 8727, "station_number": 8142,
+        "name": "Fake-Joseph Boone"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-02-04T22:21:36+0000", "is_tipped_role": false}, {"id": 2714629,
+        "company_id": 5065, "location_id": 4889, "department_id": 9158, "color": "-Fallback-scrubbed-TuDHSa",
+        "num_stations": 2132, "name": "Fake-Cassandra Jackson", "job_code": null,
+        "sort": 2132, "stations": [{"id": 2080147, "role_id": 2060, "station_number":
+        8142, "name": "Fake-Christina Bell"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-01-30T19:01:04+0000", "is_tipped_role": false}, {"id": 2714630,
+        "company_id": 5065, "location_id": 4889, "department_id": 9158, "color": "-Fallback-scrubbed-ArxSev",
+        "num_stations": 2132, "name": "Fake-Robert Yates", "job_code": null, "sort":
+        2132, "stations": [{"id": 2080148, "role_id": 9723, "station_number": 8142,
+        "name": "Fake-Albert Benitez"}, {"id": 2080149, "role_id": 9723, "station_number":
+        4242, "name": "Fake-Dominique Torres"}, {"id": 2080150, "role_id": 9723, "station_number":
+        776, "name": "Fake-Angela Waters"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-01-30T19:01:04+0000", "is_tipped_role": false}, {"id": 2714631,
+        "company_id": 5065, "location_id": 4889, "department_id": 9158, "color": "-Fallback-scrubbed-JubBex",
+        "num_stations": 2132, "name": "Fake-Christopher Love", "job_code": null, "sort":
+        2132, "stations": [{"id": 2080151, "role_id": 8075, "station_number": 8142,
+        "name": "Fake-Albert Benitez"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-01-30T19:01:04+0000", "is_tipped_role": false}, {"id": 2714632,
+        "company_id": 5065, "location_id": 4889, "department_id": 9158, "color": "-Fallback-scrubbed-GdeGxj",
+        "num_stations": 2132, "name": "Fake-Laura Smith", "job_code": null, "sort":
+        2132, "stations": [{"id": 2080152, "role_id": 4490, "station_number": 8142,
+        "name": "Fake-Dominique Torres"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-01-30T19:01:04+0000", "is_tipped_role": false}, {"id": 2714633,
+        "company_id": 5065, "location_id": 4889, "department_id": 5878, "color": "-Fallback-scrubbed-xdKIqv",
+        "num_stations": 2132, "name": "Fake-Timothy Kelly", "job_code": null, "sort":
+        2132, "stations": [{"id": 2080153, "role_id": 5361, "station_number": 8142,
+        "name": "Fake-Joseph Boone"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-01-30T19:01:04+0000", "is_tipped_role": false}, {"id": 2714634,
+        "company_id": 5065, "location_id": 4889, "department_id": 5878, "color": "-Fallback-scrubbed-ArxSev",
+        "num_stations": 2132, "name": "Fake-Laura Hill", "job_code": null, "sort":
+        2132, "stations": [{"id": 2080154, "role_id": 4314, "station_number": 8142,
+        "name": "Fake-Joseph Boone"}, {"id": 2080155, "role_id": 4314, "station_number":
+        4242, "name": "Fake-William Day"}, {"id": 2080156, "role_id": 4314, "station_number":
+        776, "name": "Fake-Melanie Cooper"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-01-30T19:01:04+0000", "is_tipped_role": false}, {"id": 2714635,
+        "company_id": 5065, "location_id": 4889, "department_id": 5878, "color": "-Fallback-scrubbed-GwFCOM",
+        "num_stations": 2132, "name": "Fake-Christopher Love", "job_code": null, "sort":
+        2132, "stations": [{"id": 2080157, "role_id": 2045, "station_number": 8142,
+        "name": "Fake-Heather Hernandez"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-01-30T19:01:04+0000", "is_tipped_role": false}, {"id": 2714636,
+        "company_id": 5065, "location_id": 4889, "department_id": 5878, "color": "-Fallback-scrubbed-GdeGxj",
+        "num_stations": 2132, "name": "Fake-Shannon Lucas", "job_code": null, "sort":
+        2132, "stations": [{"id": 2080158, "role_id": 5088, "station_number": 8142,
+        "name": "Fake-Robert Byrd"}], "created": "-Fallback-scrubbed-LywgSIRsiZiafrpzRkxXJVmp",
+        "modified": "2026-01-30T19:01:04+0000", "is_tipped_role": false}], "meta":
+        {"cursor": {"current": null, "prev": null, "next": null, "count": 1591}},
+        "object": "-Fallback-scrubbed-wdEjK"}'
+    headers:
+      CF-RAY:
+      - a566b4b57d2aae81-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:04:12 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '7861'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - b77c23265ccfa0f8638ad6103d019da5/216738481896347400
+      x-served-by:
+      - rollout-689469f6-vdrfr-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

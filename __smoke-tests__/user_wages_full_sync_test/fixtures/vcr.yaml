@@ -1,0 +1,4428 @@
+interactions:
+- request:
+    body: grant_type=client_credentials&scope=v1_access+companies%3Aread+locations%3Aread
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '79'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.34.2
+    method: POST
+    uri: https://app.7shifts.com/oauth2/token
+  response:
+    body:
+      string: '{"token_type": "-Fallback-scrubbed-lWEcmH", "expires_in": 3599, "access_token":
+        "eyJ***"}'
+    headers:
+      CF-RAY:
+      - a566b880986a6288-GRU
+      Cache-Control:
+      - no-store,no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 06 Nov 2026 20:06:47 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '89'
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      permissions-policy:
+      - interest-cohort=()
+      pragma:
+      - no-cache
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 287728c8f306d73ce8b6ad4ef8f4c9d2/1194040374569751934
+      x-served-by:
+      - rollout-689469f6-57xrg-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users?limit=500
+  response:
+    body:
+      string: '{"data": [{"id": 10955554, "identity_id": 7546, "company_id": 3633,
+        "first_name": "Fake-James", "last_name": "Fake-Wagner", "preferred_first_name":
+        "Fake-James", "preferred_last_name": "Fake-Wagner", "pronouns": null, "email":
+        "fake.mary36@example.com", "mobile_number": "7863", "home_number": "", "address":
+        "", "postal_zip": "", "city": "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX",
+        "last_login": "2014-10-06T00:56:40+00:00", "active": true, "photo": "-Fallback-scrubbed-CdMWwjwnjzGwdLhRjNFqhOFMRqxyrSIOMdjJdoAIMu",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-URaaHBUS", "punch_id":
+        "3829", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        null, "is_new": false, "birth_date": null, "language": "-Fallback-scrubbed-RW",
+        "appear_as_employee": true, "subscribe_to_updates": true, "skill_level": 917,
+        "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules":
+        null, "notify_ot_risk": null, "push": true, "permissions_template_id": 8900,
+        "onboarding_required": false, "reactivation_status": null, "created": "2000-03-02T05:13:37+00:00",
+        "modified": "2026-11-06T19:27:00+00:00"}, {"id": 10955555, "identity_id":
+        5290, "company_id": 3633, "first_name": "Fake-Susan", "last_name": "Fake-Taylor",
+        "preferred_first_name": "Fake-Susan", "preferred_last_name": "Fake-Taylor",
+        "pronouns": null, "email": "fake.alexisschroeder@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-xBhLxbPdZYotIYOXKbDkUpLGKdfPTCfFgUTepHRINHcqjSBiwhJOGB",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "6376", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2026-03-20T14:02:12+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2016-11-18T14:53:35+00:00", "modified": "2026-01-30T19:04:26+00:00"}, {"id":
+        10955556, "identity_id": 8738, "company_id": 3633, "first_name": "Fake-Brittany",
+        "last_name": "Fake-Thompson", "preferred_first_name": "Fake-Brittany", "preferred_last_name":
+        "Fake-Thompson", "pronouns": null, "email": "fake.forddesiree@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-PbCfaYCbAjTSjEgVevmFzcQuNEArAUbKgOfljKpKcbXarjAcLoWBiz",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "4392", "employee_id": "", "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2026-03-20T14:02:12+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 1113, "wage_type": "-Fallback-scrubbed-EWYEhdIlDNDgi",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2016-11-18T14:53:35+00:00", "modified": "2026-02-05T22:08:17+00:00"}, {"id":
+        10955557, "identity_id": 2715, "company_id": 3633, "first_name": "Fake-Jennifer",
+        "last_name": "Fake-Johnson", "preferred_first_name": "Fake-Jennifer", "preferred_last_name":
+        "Fake-Johnson", "pronouns": null, "email": "fake.aanthony@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-WGlpKkruHGSUuBNEIfjwLQfVxauNyKBsJVPtnaLZzRCBpLAaRPDDec",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "6584", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1971-11-03T21:49:54+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1985-10-15T08:06:02+00:00", "modified": "2026-01-30T19:04:26+00:00"}, {"id":
+        10955558, "identity_id": 8801, "company_id": 3633, "first_name": "Fake-Sheena",
+        "last_name": "Fake-Wolfe", "preferred_first_name": "Fake-Sheena", "preferred_last_name":
+        "Fake-Wolfe", "pronouns": null, "email": "fake.jonathanreyes@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-LoyaYkjtfquOijPOKTpTwbkKMCiHbUsGBIsSDMOyKbjffPQPfWeEDX",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-doGmLtb", "punch_id":
+        "4787", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1971-11-03T21:49:54+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        5609, "onboarding_required": false, "reactivation_status": null, "created":
+        "1985-10-15T08:06:02+00:00", "modified": "2026-01-30T19:04:26+00:00"}, {"id":
+        10955559, "identity_id": 6892, "company_id": 3633, "first_name": "Fake-Joshua",
+        "last_name": "Fake-Boyer", "preferred_first_name": "Fake-Joshua", "preferred_last_name":
+        "Fake-Boyer", "pronouns": null, "email": "fake.josephharper@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-YJKCVTBUvnexmfyOseIXopTXbbRjmlzMeanqpaROVPlNFpSSMTqTaw",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "4541", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1971-11-03T21:49:54+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1985-10-15T08:06:02+00:00", "modified": "2026-01-30T19:04:26+00:00"}, {"id":
+        10955560, "identity_id": 1962, "company_id": 3633, "first_name": "Fake-Allison",
+        "last_name": "Fake-Clark", "preferred_first_name": "Fake-Allison", "preferred_last_name":
+        "Fake-Clark", "pronouns": null, "email": "fake.teresacrane@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-UAzXCbJXAFRYKVSaKUvolBZFcBNMqixcbPfmUGiSpfkhzPzVKZQlHd",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-doGmLtb", "punch_id":
+        "8301", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2024-11-04T22:43:10+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        5609, "onboarding_required": false, "reactivation_status": null, "created":
+        "1975-02-14T13:23:28+00:00", "modified": "2026-01-30T19:04:27+00:00"}, {"id":
+        10955561, "identity_id": 7950, "company_id": 3633, "first_name": "Fake-Victoria",
+        "last_name": "Fake-Nunez", "preferred_first_name": "Fake-Victoria", "preferred_last_name":
+        "Fake-Nunez", "pronouns": null, "email": "fake.fclark@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-VdEISXCccmORZEoBEXSofxOfhqIABQlFVxbfReqsRUVhFWnRiKAym",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "7844", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2024-11-04T22:43:10+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1975-02-14T13:23:28+00:00", "modified": "2026-01-30T19:04:27+00:00"}, {"id":
+        10955563, "identity_id": 5599, "company_id": 3633, "first_name": "Fake-Michelle",
+        "last_name": "Fake-White", "preferred_first_name": "Fake-Michelle", "preferred_last_name":
+        "Fake-White", "pronouns": null, "email": "fake.nicole90@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-CUclqqOGVNdAocDBPdyFaZImRvqSEDOKBBAoguShJlqADIXZJWBWqT",
+        "notes": "-Fallback-scrubbed-rJbBTILMfzwjaYYQcjJ", "timezone": null, "type":
+        "-Fallback-scrubbed-yKlNalWr", "punch_id": "3076", "employee_id": null, "max_weekly_hours":
+        "", "invited": null, "invite_accepted": "2024-11-04T22:43:10+00:00", "is_new":
+        false, "birth_date": null, "language": "-Fallback-scrubbed-RW", "appear_as_employee":
+        true, "subscribe_to_updates": true, "skill_level": 8765, "hourly_wage": 917,
+        "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules": null, "notify_ot_risk":
+        null, "push": true, "permissions_template_id": 9735, "onboarding_required":
+        false, "reactivation_status": null, "created": "1975-02-14T13:23:28+00:00",
+        "modified": "2026-01-30T19:04:27+00:00"}, {"id": 10955564, "identity_id":
+        6503, "company_id": 3633, "first_name": "Fake-Susan", "last_name": "Fake-Mccann",
+        "preferred_first_name": "Fake-Susan", "preferred_last_name": "Fake-Mccann",
+        "pronouns": null, "email": "fake.bettycoleman@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-egDGvAnDoRZdNQeTMgRQbBYfRMWcvnUUKwMODvXcyAItamTTXZWbqC",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "6824", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1984-06-20T09:25:21+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2021-12-06T12:44:42+00:00", "modified": "2026-01-30T19:04:27+00:00"}, {"id":
+        10955565, "identity_id": 7381, "company_id": 3633, "first_name": "Fake-Brittany",
+        "last_name": "Fake-Hernandez", "preferred_first_name": "Fake-Brittany", "preferred_last_name":
+        "Fake-Hernandez", "pronouns": null, "email": "fake.kelleyclaire@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-OUDnbzBQXKbJFBUOXuFUZUEdRePIIsJJIMkwWctLBbBMKMoGGuSma",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "5558", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1984-06-20T09:25:21+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2021-12-06T12:44:42+00:00", "modified": "2026-01-30T19:04:27+00:00"}, {"id":
+        10955566, "identity_id": 4633, "company_id": 3633, "first_name": "Fake-Christina",
+        "last_name": "Fake-Walker", "preferred_first_name": "Fake-Christina", "preferred_last_name":
+        "Fake-Walker", "pronouns": null, "email": "fake.elainethomas@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-cxmLhPevRbaYOTxioFpHlewkDKDKqJnCErpoVlqIDSWITddaytxwmY",
+        "notes": "-Fallback-scrubbed-bNpiuxPYBrNBvWRYKuiFEDDs", "timezone": null,
+        "type": "-Fallback-scrubbed-yKlNalWr", "punch_id": "7417", "employee_id":
+        null, "max_weekly_hours": "", "invited": null, "invite_accepted": "2000-05-09T17:32:12+00:00",
+        "is_new": false, "birth_date": null, "language": "-Fallback-scrubbed-RW",
+        "appear_as_employee": true, "subscribe_to_updates": true, "skill_level": 8765,
+        "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules":
+        null, "notify_ot_risk": null, "push": true, "permissions_template_id": 9735,
+        "onboarding_required": false, "reactivation_status": null, "created": "1979-06-07T10:55:49+00:00",
+        "modified": "2026-01-30T19:04:27+00:00"}, {"id": 10955567, "identity_id":
+        1539, "company_id": 3633, "first_name": "Fake-Javier", "last_name": "Fake-Weaver",
+        "preferred_first_name": "Fake-Javier", "preferred_last_name": "Fake-Weaver",
+        "pronouns": null, "email": "fake.patrickadams@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-QqfCNJqPpZESkrMnMhSjjRWdBwdsUyfIAchsaXNKMEFmVVlAjVmwwb",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "9727", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2000-05-09T17:32:12+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1979-06-07T10:55:49+00:00", "modified": "2026-01-30T19:04:27+00:00"}, {"id":
+        10955568, "identity_id": 1669, "company_id": 3633, "first_name": "Fake-Harold",
+        "last_name": "Fake-Ward", "preferred_first_name": "Fake-Harold", "preferred_last_name":
+        "Fake-Ward", "pronouns": null, "email": "fake.woodmartin@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-bmUcKJkAxmXPogrLQFRebPEhCIqLavlyoeZPaqctZuYYIFbcsNqNs",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "6007", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2000-05-09T17:32:12+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1979-06-07T10:55:49+00:00", "modified": "2026-01-30T19:04:27+00:00"}, {"id":
+        10955569, "identity_id": 5853, "company_id": 3633, "first_name": "Fake-Travis",
+        "last_name": "Fake-Braun", "preferred_first_name": "Fake-Travis", "preferred_last_name":
+        "Fake-Braun", "pronouns": null, "email": "fake.qsanders@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-uiSmYxyZfNTRvWElrbMcyBsCZDneJdWcEibfPQXqxbEyDiJFCnhOhR",
+        "notes": "-Fallback-scrubbed-DnhfrLpYtdadVqrezKw", "timezone": null, "type":
+        "-Fallback-scrubbed-yKlNalWr", "punch_id": "1573", "employee_id": null, "max_weekly_hours":
+        "", "invited": null, "invite_accepted": "1973-07-21T07:06:17+00:00", "is_new":
+        false, "birth_date": null, "language": "-Fallback-scrubbed-RW", "appear_as_employee":
+        true, "subscribe_to_updates": true, "skill_level": 8765, "hourly_wage": 917,
+        "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules": null, "notify_ot_risk":
+        null, "push": true, "permissions_template_id": 9735, "onboarding_required":
+        false, "reactivation_status": null, "created": "1993-11-25T00:43:32+00:00",
+        "modified": "2026-01-30T19:04:27+00:00"}, {"id": 10955572, "identity_id":
+        2975, "company_id": 3633, "first_name": "Fake-John", "last_name": "Fake-Montoya",
+        "preferred_first_name": "Fake-John", "preferred_last_name": "Fake-Montoya",
+        "pronouns": null, "email": "fake.hzamora@example.com", "mobile_number": "",
+        "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-psQaZnlRNaNJRtgNhNmxvsnRkUGCQCzPlAUIZPKgnXrAmzAFjRwOTc",
+        "notes": "-Fallback-scrubbed-fvNsGUaffvrOqZPcySnfIgsT", "timezone": null,
+        "type": "-Fallback-scrubbed-yKlNalWr", "punch_id": "1552", "employee_id":
+        null, "max_weekly_hours": "", "invited": null, "invite_accepted": "1973-07-21T07:06:17+00:00",
+        "is_new": false, "birth_date": null, "language": "-Fallback-scrubbed-RW",
+        "appear_as_employee": true, "subscribe_to_updates": true, "skill_level": 8765,
+        "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules":
+        null, "notify_ot_risk": null, "push": true, "permissions_template_id": 9735,
+        "onboarding_required": false, "reactivation_status": null, "created": "1993-11-25T00:43:32+00:00",
+        "modified": "2026-01-30T19:04:27+00:00"}, {"id": 10955573, "identity_id":
+        7800, "company_id": 3633, "first_name": "Fake-Bryan", "last_name": "Fake-Stephenson",
+        "preferred_first_name": "Fake-Bryan", "preferred_last_name": "Fake-Stephenson",
+        "pronouns": null, "email": "fake.phillipsmichelle@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-VDApagasIfnilFKQYmkTbfizUWfUZvEsONERGdRInZjiyZgUzvxThw",
+        "notes": "-Fallback-scrubbed-BakbNiHPqtgpOqdoCOvn", "timezone": null, "type":
+        "-Fallback-scrubbed-yKlNalWr", "punch_id": "8715", "employee_id": null, "max_weekly_hours":
+        "", "invited": null, "invite_accepted": "1973-07-21T07:06:17+00:00", "is_new":
+        false, "birth_date": null, "language": "-Fallback-scrubbed-RW", "appear_as_employee":
+        true, "subscribe_to_updates": true, "skill_level": 8765, "hourly_wage": 917,
+        "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules": null, "notify_ot_risk":
+        null, "push": true, "permissions_template_id": 9735, "onboarding_required":
+        false, "reactivation_status": null, "created": "1993-11-25T00:43:32+00:00",
+        "modified": "2026-01-30T19:04:27+00:00"}, {"id": 10955574, "identity_id":
+        2766, "company_id": 3633, "first_name": "Fake-Kimberly", "last_name": "Fake-Fowler",
+        "preferred_first_name": "Fake-Kimberly", "preferred_last_name": "Fake-Fowler",
+        "pronouns": null, "email": "fake.swansoneric@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-FFyzRsFXrNtURflTyWteWkicaVVdJPFBcaYqGxthKoIkNVwvdwhZG",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "4759", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2021-08-24T19:49:00+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2009-04-26T22:38:14+00:00", "modified": "2026-01-30T19:04:27+00:00"}, {"id":
+        10955575, "identity_id": 2131, "company_id": 3633, "first_name": "Fake-Brett",
+        "last_name": "Fake-Ramsey", "preferred_first_name": "Fake-Brett", "preferred_last_name":
+        "Fake-Ramsey", "pronouns": null, "email": "fake.lindseyguzman@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-uQynUaMsJOpXZtcXPNmyfnODfjfhWEYDbGSlJNVTpGqLqfWTitqvD",
+        "notes": "-Fallback-scrubbed-fvNsGUaffvrOqZPcySnfIgsT", "timezone": null,
+        "type": "-Fallback-scrubbed-yKlNalWr", "punch_id": "1954", "employee_id":
+        null, "max_weekly_hours": "", "invited": null, "invite_accepted": "2021-08-24T19:49:00+00:00",
+        "is_new": false, "birth_date": null, "language": "-Fallback-scrubbed-RW",
+        "appear_as_employee": true, "subscribe_to_updates": true, "skill_level": 8765,
+        "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules":
+        null, "notify_ot_risk": null, "push": true, "permissions_template_id": 9735,
+        "onboarding_required": false, "reactivation_status": null, "created": "2009-04-26T22:38:14+00:00",
+        "modified": "2026-01-30T19:04:28+00:00"}, {"id": 10955576, "identity_id":
+        8436, "company_id": 3633, "first_name": "Fake-Allen", "last_name": "Fake-Gonzalez",
+        "preferred_first_name": "Fake-Allen", "preferred_last_name": "Fake-Gonzalez",
+        "pronouns": null, "email": "fake.robertdawson@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-VNjTThibUNKTPXUdPAzIyKMprQagdwIjEAoeVfXIIPoVQvqxmzYahA",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "4519", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2021-08-24T19:49:00+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2009-04-26T22:38:14+00:00", "modified": "2026-01-30T19:04:28+00:00"}, {"id":
+        10955577, "identity_id": 935, "company_id": 3633, "first_name": "Fake-Paul",
+        "last_name": "Fake-Nolan", "preferred_first_name": "Fake-Paul", "preferred_last_name":
+        "Fake-Nolan", "pronouns": null, "email": "fake.ericaburgess@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-fpMNUtcbzuuFGzMXnbOfIyheUhsYFkTqiEjvmOrqxEXmsITWdWVSAy",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-doGmLtb", "punch_id":
+        "9145", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1978-05-21T18:14:59+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        5609, "onboarding_required": false, "reactivation_status": null, "created":
+        "2008-07-20T03:35:31+00:00", "modified": "2026-01-30T19:04:28+00:00"}, {"id":
+        10955578, "identity_id": 7739, "company_id": 3633, "first_name": "Fake-Seth",
+        "last_name": "Fake-Walker", "preferred_first_name": "Fake-Seth", "preferred_last_name":
+        "Fake-Walker", "pronouns": null, "email": "fake.benjamin11@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-FjmZxlBwzHDMoALIYwiMVXGEPNkgKGQNHnPemmLgDIFwayziggQubf",
+        "notes": "-Fallback-scrubbed-BakbNiHPqtgpOqdoCOvn", "timezone": null, "type":
+        "-Fallback-scrubbed-yKlNalWr", "punch_id": "6345", "employee_id": null, "max_weekly_hours":
+        "", "invited": null, "invite_accepted": "1978-05-21T18:14:59+00:00", "is_new":
+        false, "birth_date": null, "language": "-Fallback-scrubbed-RW", "appear_as_employee":
+        true, "subscribe_to_updates": true, "skill_level": 8765, "hourly_wage": 917,
+        "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules": null, "notify_ot_risk":
+        null, "push": true, "permissions_template_id": 9735, "onboarding_required":
+        false, "reactivation_status": null, "created": "2008-07-20T03:35:31+00:00",
+        "modified": "2026-01-30T19:04:28+00:00"}, {"id": 10955579, "identity_id":
+        9303, "company_id": 3633, "first_name": "Fake-Charles", "last_name": "Fake-Gutierrez",
+        "preferred_first_name": "Fake-Charles", "preferred_last_name": "Fake-Gutierrez",
+        "pronouns": null, "email": "fake.michaelpowell@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-kZbAEsPFixONPNdurLYHozOoTomMKuHhXtGXZEmFdetjYhNaalUVoC",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-doGmLtb", "punch_id":
+        "1875", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2018-09-27T22:23:42+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        5609, "onboarding_required": false, "reactivation_status": null, "created":
+        "1976-05-31T15:23:20+00:00", "modified": "2026-01-30T19:04:28+00:00"}, {"id":
+        10955580, "identity_id": 5019, "company_id": 3633, "first_name": "Fake-Gary",
+        "last_name": "Fake-Bennett", "preferred_first_name": "Fake-Gary", "preferred_last_name":
+        "Fake-Bennett", "pronouns": null, "email": "fake.kelsey39@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-QrFjCiSjmDRXoqwwmDJDXDNkXwOtyDPAiebMNRXIFztKCTxjglwqWz",
+        "notes": "-Fallback-scrubbed-KcYohCjEnPoLsRtOAtcbGlitTiMh", "timezone": null,
+        "type": "-Fallback-scrubbed-yKlNalWr", "punch_id": "6170", "employee_id":
+        null, "max_weekly_hours": "", "invited": null, "invite_accepted": "2018-09-27T22:23:42+00:00",
+        "is_new": false, "birth_date": null, "language": "-Fallback-scrubbed-RW",
+        "appear_as_employee": true, "subscribe_to_updates": true, "skill_level": 8765,
+        "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules":
+        null, "notify_ot_risk": null, "push": true, "permissions_template_id": 9735,
+        "onboarding_required": false, "reactivation_status": null, "created": "1976-05-31T15:23:20+00:00",
+        "modified": "2026-01-30T19:04:28+00:00"}, {"id": 10955581, "identity_id":
+        1591, "company_id": 3633, "first_name": "Fake-Charles", "last_name": "Fake-Roberts",
+        "preferred_first_name": "Fake-Charles", "preferred_last_name": "Fake-Roberts",
+        "pronouns": null, "email": "fake.williamsanthony@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-QyvsVKwdMfFxGRIgKiwSfEolOOucgKDAFXcaQcmqwYqRRALEYFotEc",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "6673", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1976-11-01T04:09:11+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2001-06-18T16:42:14+00:00", "modified": "2026-01-30T19:04:28+00:00"}, {"id":
+        10955582, "identity_id": 4392, "company_id": 3633, "first_name": "Fake-Jacqueline",
+        "last_name": "Fake-Harris", "preferred_first_name": "Fake-Jacqueline", "preferred_last_name":
+        "Fake-Harris", "pronouns": null, "email": "fake.michael93@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-nDGlHLEijxlPeviwNgTNZuQbMbMAWZlWLzAJRvciTzDSqSqqqhQdI",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "5563", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1976-11-01T04:09:11+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2001-06-18T16:42:14+00:00", "modified": "2026-01-30T19:04:28+00:00"}, {"id":
+        10955583, "identity_id": 2610, "company_id": 3633, "first_name": "Fake-Nichole",
+        "last_name": "Fake-Mullins", "preferred_first_name": "Fake-Nichole", "preferred_last_name":
+        "Fake-Mullins", "pronouns": null, "email": "fake.emma78@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-ZKeJfmSJjpZJbruqtxUCBjIMTnUQGlqfVUIIMkyfIZNwTeUQSxARNO",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "8992", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1976-11-01T04:09:11+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2001-06-18T16:42:14+00:00", "modified": "2026-01-30T19:04:28+00:00"}, {"id":
+        10955584, "identity_id": 6153, "company_id": 3633, "first_name": "Fake-Denise",
+        "last_name": "Fake-Harrison", "preferred_first_name": "Fake-Denise", "preferred_last_name":
+        "Fake-Harrison", "pronouns": null, "email": "fake.danielle93@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-NezcBrXRSwFElvmfXbIFowiCFeEHAndyuDGncjZCHxakbvXeUYbge",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "1152", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2012-10-17T21:05:05+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1983-08-17T05:27:54+00:00", "modified": "2026-01-30T19:04:28+00:00"}, {"id":
+        10955585, "identity_id": 2786, "company_id": 3633, "first_name": "Fake-Ryan",
+        "last_name": "Fake-Small", "preferred_first_name": "Fake-Ryan", "preferred_last_name":
+        "Fake-Small", "pronouns": null, "email": "fake.stephanie50@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-vGRCKCaRiHWGlYEaObvLmNKuqFxHnymnykaxLZqEKvFbqUlxAJwACu",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "3091", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2012-10-17T21:05:05+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1983-08-17T05:27:54+00:00", "modified": "2026-01-30T19:04:28+00:00"}, {"id":
+        10955586, "identity_id": 3011, "company_id": 3633, "first_name": "Fake-Sarah",
+        "last_name": "Fake-Mckinney", "preferred_first_name": "Fake-Sarah", "preferred_last_name":
+        "Fake-Mckinney", "pronouns": null, "email": "fake.travis56@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-wDPhqlYxOUnqoSZbsUXkwecAekWuZMtklHBYWjRfsXbjeunVcJmZfm",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "8540", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2012-10-17T21:05:05+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1983-08-17T05:27:54+00:00", "modified": "2026-01-30T19:04:29+00:00"}, {"id":
+        10955587, "identity_id": 902, "company_id": 3633, "first_name": "Fake-Jaclyn",
+        "last_name": "Fake-Payne", "preferred_first_name": "Fake-Jaclyn", "preferred_last_name":
+        "Fake-Payne", "pronouns": null, "email": "fake.jalvarez@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-ldUSyZAzfNwNCYmeKIwVqTTroYyrxAmJlFyLQvJafVmMFFEESsAjFe",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "1396", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2010-10-22T00:37:32+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2013-06-18T12:05:02+00:00", "modified": "2026-01-30T19:04:29+00:00"}, {"id":
+        10955588, "identity_id": 8357, "company_id": 3633, "first_name": "Fake-Jose",
+        "last_name": "Fake-Hoffman", "preferred_first_name": "Fake-Jose", "preferred_last_name":
+        "Fake-Hoffman", "pronouns": null, "email": "fake.william65@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-NTrDTEOvmBomoCrUPDItknWqYIcMIewGcUvVMAWLiXOHCJXmpCBKsg",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "360", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2010-10-22T00:37:32+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2013-06-18T12:05:02+00:00", "modified": "2026-01-30T19:04:29+00:00"}, {"id":
+        10955589, "identity_id": 5504, "company_id": 3633, "first_name": "Fake-Tasha",
+        "last_name": "Fake-Reynolds", "preferred_first_name": "Fake-Tasha", "preferred_last_name":
+        "Fake-Reynolds", "pronouns": null, "email": "fake.christine82@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-XoaGxrraYAXSeicZrDPYzbZiZyiExFimFwhftYkJncaBGQnbxyHALz",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "1413", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2010-10-22T00:37:32+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2013-06-18T12:05:02+00:00", "modified": "2026-01-30T19:04:29+00:00"}, {"id":
+        10955590, "identity_id": 2524, "company_id": 3633, "first_name": "Fake-Kimberly",
+        "last_name": "Fake-Fox", "preferred_first_name": "Fake-Kimberly", "preferred_last_name":
+        "Fake-Fox", "pronouns": null, "email": "fake.nunezcaitlin@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-zoEoSxRhMmoGXrkWnScPBSrnRdCPYBjDGZWnieTpTWVIkenDCjfNbV",
+        "notes": "-Fallback-scrubbed-sGLZpJxhPBsmBRWmUQRmnzODjHqQnuSfh", "timezone":
+        null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id": "5223", "employee_id":
+        null, "max_weekly_hours": "", "invited": null, "invite_accepted": "2012-03-13T17:37:00+00:00",
+        "is_new": false, "birth_date": null, "language": "-Fallback-scrubbed-RW",
+        "appear_as_employee": true, "subscribe_to_updates": true, "skill_level": 8765,
+        "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules":
+        null, "notify_ot_risk": null, "push": true, "permissions_template_id": 9735,
+        "onboarding_required": false, "reactivation_status": null, "created": "1985-12-02T06:54:42+00:00",
+        "modified": "2026-01-30T19:04:29+00:00"}, {"id": 10955591, "identity_id":
+        9046, "company_id": 3633, "first_name": "Fake-Jason", "last_name": "Fake-Johnson",
+        "preferred_first_name": "Fake-Jason", "preferred_last_name": "Fake-Johnson",
+        "pronouns": null, "email": "fake.dianasmith@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-vWcPSpuPforALPrtKBSknGBSDmCpchkFTGLpouRsUnMCrApmFxqNt",
+        "notes": "-Fallback-scrubbed-MGlQgYyiFxRyFCbJCvT", "timezone": null, "type":
+        "-Fallback-scrubbed-yKlNalWr", "punch_id": "1118", "employee_id": null, "max_weekly_hours":
+        "", "invited": null, "invite_accepted": "2012-03-13T17:37:00+00:00", "is_new":
+        false, "birth_date": null, "language": "-Fallback-scrubbed-RW", "appear_as_employee":
+        true, "subscribe_to_updates": true, "skill_level": 8765, "hourly_wage": 917,
+        "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules": null, "notify_ot_risk":
+        null, "push": true, "permissions_template_id": 9735, "onboarding_required":
+        false, "reactivation_status": null, "created": "1985-12-02T06:54:42+00:00",
+        "modified": "2026-01-30T19:04:29+00:00"}, {"id": 10955592, "identity_id":
+        1272, "company_id": 3633, "first_name": "Fake-Tonya", "last_name": "Fake-Baird",
+        "preferred_first_name": "Fake-Tonya", "preferred_last_name": "Fake-Baird",
+        "pronouns": null, "email": "fake.mmiller@example.com", "mobile_number": "",
+        "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-IIIbwHCVNYGVgUwatBdaqNSOoYjBeiZzsjmKeQWEMlNarpnfSULYvD",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "1118", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2012-03-13T17:37:00+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1985-12-02T06:54:42+00:00", "modified": "2026-01-30T19:04:29+00:00"}, {"id":
+        10955593, "identity_id": 403, "company_id": 3633, "first_name": "Fake-Joel",
+        "last_name": "Fake-Collins", "preferred_first_name": "Fake-Joel", "preferred_last_name":
+        "Fake-Collins", "pronouns": null, "email": "fake.millerlinda@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-bnXOzJRHegwHSuOHiabVtqdiXvneblVOjLOgFAbxHDyLUJKIXAtpn",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-doGmLtb", "punch_id":
+        "7624", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1979-01-16T09:46:00+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        5609, "onboarding_required": false, "reactivation_status": null, "created":
+        "2016-05-04T08:18:08+00:00", "modified": "2026-01-30T19:04:29+00:00"}, {"id":
+        10955594, "identity_id": 760, "company_id": 3633, "first_name": "Fake-Brooke",
+        "last_name": "Fake-Holland", "preferred_first_name": "Fake-Brooke", "preferred_last_name":
+        "Fake-Holland", "pronouns": null, "email": "fake.jacksonlindsey@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-xSCHUENlXsjRssoSaEfsadieRvABYsleHwpaThkzgBTEAVeyEKzgD",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "563", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1979-01-16T09:46:00+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2016-05-04T08:18:08+00:00", "modified": "2026-01-30T19:04:29+00:00"}, {"id":
+        10955595, "identity_id": 9466, "company_id": 3633, "first_name": "Fake-Michael",
+        "last_name": "Fake-Novak", "preferred_first_name": "Fake-Michael", "preferred_last_name":
+        "Fake-Novak", "pronouns": null, "email": "fake.fsoto@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-cyfSQxQEAxWinrwLqZklkIhFvthOGIFrHEBrvoUfSZqGuKuUtFoEpm",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-doGmLtb", "punch_id":
+        "1732", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2016-02-20T23:02:14+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        5609, "onboarding_required": false, "reactivation_status": null, "created":
+        "1973-05-04T17:31:36+00:00", "modified": "2026-01-30T19:04:29+00:00"}, {"id":
+        10955596, "identity_id": 8477, "company_id": 3633, "first_name": "Fake-William",
+        "last_name": "Fake-Simpson", "preferred_first_name": "Fake-William", "preferred_last_name":
+        "Fake-Simpson", "pronouns": null, "email": "fake.lauramoore@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-DSXWrqvolaHpIwsKFqGVecBfFUEJkWLldhRJNGlmiVCUwJgrBRBfd",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "4656", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2016-02-20T23:02:14+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1973-05-04T17:31:36+00:00", "modified": "2026-01-30T19:04:29+00:00"}, {"id":
+        10955597, "identity_id": 4869, "company_id": 3633, "first_name": "Fake-Joseph",
+        "last_name": "Fake-Hill", "preferred_first_name": "Fake-Joseph", "preferred_last_name":
+        "Fake-Hill", "pronouns": null, "email": "fake.evelyn35@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-GZrjJbUiLuYcBUjiRlGSpeqPcYFUxOdYCvtdkCZUwhjqmcCbiTPsGH",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "7770", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2017-12-21T00:25:50+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1985-01-23T05:37:26+00:00", "modified": "2026-01-30T19:04:29+00:00"}, {"id":
+        10955598, "identity_id": 3628, "company_id": 3633, "first_name": "Fake-Norman",
+        "last_name": "Fake-Jackson", "preferred_first_name": "Fake-Norman", "preferred_last_name":
+        "Fake-Jackson", "pronouns": null, "email": "fake.ystevenson@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-wiIZqjhARRtjprlrKUBBypvTrNVfUmJLOvpKMSZtZGLaQZAeWlDrHY",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "8386", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "2017-12-21T00:25:50+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1985-01-23T05:37:26+00:00", "modified": "2026-01-30T19:04:30+00:00"}, {"id":
+        10955599, "identity_id": 1249, "company_id": 3633, "first_name": "Fake-Timothy",
+        "last_name": "Fake-Reynolds", "preferred_first_name": "Fake-Timothy", "preferred_last_name":
+        "Fake-Reynolds", "pronouns": null, "email": "fake.qhayes@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-TPHRHvXQDyYQhdShAYdgrBxagvIbrcjnTVuIKKFEQJfRZmhWaVWEv",
+        "notes": "-Fallback-scrubbed-bNpiuxPYBrNBvWRYKuiFEDDs", "timezone": null,
+        "type": "-Fallback-scrubbed-yKlNalWr", "punch_id": "4620", "employee_id":
+        null, "max_weekly_hours": "", "invited": null, "invite_accepted": "2017-12-21T00:25:50+00:00",
+        "is_new": false, "birth_date": null, "language": "-Fallback-scrubbed-RW",
+        "appear_as_employee": true, "subscribe_to_updates": true, "skill_level": 8765,
+        "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules":
+        null, "notify_ot_risk": null, "push": true, "permissions_template_id": 9735,
+        "onboarding_required": false, "reactivation_status": null, "created": "1985-01-23T05:37:26+00:00",
+        "modified": "2026-01-30T19:04:30+00:00"}, {"id": 10955600, "identity_id":
+        2607, "company_id": 3633, "first_name": "Fake-Julie", "last_name": "Fake-Simon",
+        "preferred_first_name": "Fake-Julie", "preferred_last_name": "Fake-Simon",
+        "pronouns": null, "email": "fake.munozalexander@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-ucNPaTkKyGYnMqDVdiozjKTUmysOFpafgqpIDSSWqHcJHhhTylvSjG",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "3011", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1982-11-23T01:21:07+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2011-11-07T00:30:26+00:00", "modified": "2026-01-30T19:04:30+00:00"}, {"id":
+        10955601, "identity_id": 101, "company_id": 3633, "first_name": "Fake-Matthew",
+        "last_name": "Fake-Hughes", "preferred_first_name": "Fake-Matthew", "preferred_last_name":
+        "Fake-Hughes", "pronouns": null, "email": "fake.fflores@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-ILTaAWUgXMFUgROvhzvGpwHrOETJwqNofhZPZjUPLErWbiMpnMLpit",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "6011", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1982-11-23T01:21:07+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2011-11-07T00:30:26+00:00", "modified": "2026-01-30T19:04:30+00:00"}, {"id":
+        10955602, "identity_id": 3615, "company_id": 3633, "first_name": "Fake-Andrea",
+        "last_name": "Fake-Roberts", "preferred_first_name": "Fake-Andrea", "preferred_last_name":
+        "Fake-Roberts", "pronouns": null, "email": "fake.kimberlybrooks@example.com",
+        "mobile_number": "", "home_number": "", "address": "", "postal_zip": "", "city":
+        "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login":
+        null, "active": true, "photo": "-Fallback-scrubbed-KbnIotvymZMEzcmPWixFUROaHWXtfNNeDNubqUoetYUVObUXnpucog",
+        "notes": "-Fallback-scrubbed-DnhfrLpYtdadVqrezKw", "timezone": null, "type":
+        "-Fallback-scrubbed-yKlNalWr", "punch_id": "5315", "employee_id": null, "max_weekly_hours":
+        "", "invited": null, "invite_accepted": "1982-11-23T01:21:07+00:00", "is_new":
+        false, "birth_date": null, "language": "-Fallback-scrubbed-RW", "appear_as_employee":
+        true, "subscribe_to_updates": true, "skill_level": 8765, "hourly_wage": 917,
+        "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules": null, "notify_ot_risk":
+        null, "push": true, "permissions_template_id": 9735, "onboarding_required":
+        false, "reactivation_status": null, "created": "2011-11-07T00:30:26+00:00",
+        "modified": "2026-01-30T19:04:30+00:00"}, {"id": 10955603, "identity_id":
+        3741, "company_id": 3633, "first_name": "Fake-Edward", "last_name": "Fake-James",
+        "preferred_first_name": "Fake-Edward", "preferred_last_name": "Fake-James",
+        "pronouns": null, "email": "fake.yzavala@example.com", "mobile_number": "",
+        "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-ReEflSKPWqlsjYvtOrUqTtEWsIPkNCgqDnWEkHsqJvKxxezhadoJgk",
+        "notes": "-Fallback-scrubbed-cxJQavSmWLzfjwfBtB", "timezone": null, "type":
+        "-Fallback-scrubbed-yKlNalWr", "punch_id": "2145", "employee_id": null, "max_weekly_hours":
+        "", "invited": null, "invite_accepted": "1976-01-31T23:15:27+00:00", "is_new":
+        false, "birth_date": null, "language": "-Fallback-scrubbed-RW", "appear_as_employee":
+        true, "subscribe_to_updates": true, "skill_level": 8765, "hourly_wage": 917,
+        "wage_type": "-Fallback-scrubbed-SfvIrM", "sms_me_schedules": null, "notify_ot_risk":
+        null, "push": true, "permissions_template_id": 9735, "onboarding_required":
+        false, "reactivation_status": null, "created": "2005-05-03T13:28:07+00:00",
+        "modified": "2026-01-30T19:04:30+00:00"}, {"id": 10955604, "identity_id":
+        3088, "company_id": 3633, "first_name": "Fake-Glenn", "last_name": "Fake-Myers",
+        "preferred_first_name": "Fake-Glenn", "preferred_last_name": "Fake-Myers",
+        "pronouns": null, "email": "fake.martin71@example.com", "mobile_number": "",
+        "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-ExjygrRwFgDuRhdhTJoxGdTlfSQcaMtwkIzEXUvSSRskUfJfOaaZXE",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "2184", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1976-01-31T23:15:27+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2005-05-03T13:28:07+00:00", "modified": "2026-01-30T19:04:30+00:00"}, {"id":
+        10955605, "identity_id": 7865, "company_id": 3633, "first_name": "Fake-Raymond",
+        "last_name": "Fake-White", "preferred_first_name": "Fake-Raymond", "preferred_last_name":
+        "Fake-White", "pronouns": null, "email": "fake.woodscheryl@example.com", "mobile_number":
+        "", "home_number": "", "address": "", "postal_zip": "", "city": "", "prov_state":
+        "", "invite_status": "-Fallback-scrubbed-GqCOZfSX", "last_login": null, "active":
+        true, "photo": "-Fallback-scrubbed-YSnddajPWtSsmPnfUBRldJKpnmHGqXNNQeqUUmsPdWhZyTNxLFUsvq",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "972", "employee_id": null, "max_weekly_hours": "", "invited": null, "invite_accepted":
+        "1976-01-31T23:15:27+00:00", "is_new": false, "birth_date": null, "language":
+        "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        true, "skill_level": 8765, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "2005-05-03T13:28:07+00:00", "modified": "2026-01-30T19:04:30+00:00"}, {"id":
+        10997587, "identity_id": 3803, "company_id": 3633, "first_name": "Fake-Katie",
+        "last_name": "Fake-Mejia", "preferred_first_name": "Fake-Katie", "preferred_last_name":
+        "Fake-Mejia", "pronouns": null, "email": "fake.aaron94@example.com", "mobile_number":
+        "-Fallback-scrubbed-rFqaxasqUiDRz", "home_number": "", "address": "", "postal_zip":
+        "", "city": "", "prov_state": "", "invite_status": "-Fallback-scrubbed-GqCOZfSX",
+        "last_login": "1989-06-19T03:24:28+00:00", "active": true, "photo": "-Fallback-scrubbed-OnYIKXWTviWWaVHSIdIdbUlkIiMgOSicXtzGjZwES",
+        "notes": "", "timezone": null, "type": "-Fallback-scrubbed-yKlNalWr", "punch_id":
+        "3123", "employee_id": null, "max_weekly_hours": "", "invited": "1974-11-06T16:04:23+00:00",
+        "invite_accepted": "1986-07-28T21:01:02+00:00", "is_new": false, "birth_date":
+        null, "language": "-Fallback-scrubbed-RW", "appear_as_employee": true, "subscribe_to_updates":
+        false, "skill_level": 917, "hourly_wage": 917, "wage_type": "-Fallback-scrubbed-SfvIrM",
+        "sms_me_schedules": null, "notify_ot_risk": null, "push": true, "permissions_template_id":
+        9735, "onboarding_required": false, "reactivation_status": null, "created":
+        "1974-11-06T16:04:23+00:00", "modified": "2026-02-11T16:47:14+00:00"}], "meta":
+        {"cursor": {"current": null, "prev": null, "next": null, "count": 5641}},
+        "object": "-Fallback-scrubbed-USYcl"}'
+    headers:
+      CF-RAY:
+      - a566b883bdc26236-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:48 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '59538'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 5e02c3518e157d81953762d9d0d57d4c/10533681363445087367
+      x-served-by:
+      - rollout-689469f6-sddct-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955555/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527218, "effective_date": "2003-03-07",
+        "role_id": 4610, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2342,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527219, "effective_date": "2003-03-07",
+        "role_id": 7868, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4356,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b886fdfef200-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:48 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - bb3c5e9d35dfdf363e391a29cc74f29b/7384535478456639763
+      x-served-by:
+      - rollout-689469f6-kbhsk-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955554/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527202, "effective_date": "2003-03-07",
+        "role_id": 4610, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4814,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527203, "effective_date": "2003-03-07",
+        "role_id": 4360, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 7626,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527204, "effective_date": "2003-03-07",
+        "role_id": 6181, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 219,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527205, "effective_date": "2003-03-07",
+        "role_id": 8163, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4913,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527206, "effective_date": "2003-03-07",
+        "role_id": 7418, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1202,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527207, "effective_date": "2003-03-07",
+        "role_id": 2547, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1604,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527208, "effective_date": "2003-03-07",
+        "role_id": 4917, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6405,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527209, "effective_date": "2003-03-07",
+        "role_id": 6050, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1857,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527210, "effective_date": "2003-03-07",
+        "role_id": 7868, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6780,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527211, "effective_date": "2003-03-07",
+        "role_id": 6836, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1472,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527212, "effective_date": "2003-03-07",
+        "role_id": 3874, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8796,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527213, "effective_date": "2003-03-07",
+        "role_id": 5043, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 3711,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527214, "effective_date": "2003-03-07",
+        "role_id": 3737, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1080,
+        "enabled_days": null, "allocations": null, "created": "2024-12-16T17:47:07Z",
+        "modified": "2026-01-30T19:01:27Z"}, {"id": 30527215, "effective_date": "2003-03-07",
+        "role_id": 8670, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6591,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527216, "effective_date": "2003-03-07",
+        "role_id": 731, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5319,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527217, "effective_date": "2003-03-07",
+        "role_id": 1784, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5075,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b88aabcbabfb-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:49 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '4022'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 6b556cce3b86aeee91ef62da79753a92/2478272752335142453
+      x-served-by:
+      - rollout-689469f6-kbhsk-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955556/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30570566, "effective_date": "2009-08-13",
+        "role_id": null, "wage_type": "-Fallback-scrubbed-tDHmiSvRXPYiL", "wage_cents":
+        1113, "enabled_days": null, "allocations": null, "created": "2023-08-24T06:37:22Z",
+        "modified": "2026-02-05T22:08:17Z"}, {"id": 30527220, "effective_date": "2003-03-07",
+        "role_id": 4360, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2301,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527221, "effective_date": "2003-03-07",
+        "role_id": 1784, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 351,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30563865, "effective_date": "2002-04-20",
+        "role_id": 7868, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1053,
+        "enabled_days": null, "allocations": null, "created": "1986-02-25T13:40:42Z",
+        "modified": "2026-02-05T15:37:49Z"}, {"id": 30570545, "effective_date": "1974-07-21",
+        "role_id": 6181, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5043,
+        "enabled_days": null, "allocations": null, "created": "2004-02-29T12:31:34Z",
+        "modified": "2026-02-05T22:06:37Z"}, {"id": 30563899, "effective_date": "2009-08-13",
+        "role_id": 8670, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4215,
+        "enabled_days": null, "allocations": null, "created": "1973-01-25T21:46:22Z",
+        "modified": "2026-02-05T15:41:30Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-tDHmiSvRXPYiL"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b88dab7ee90b-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:49 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1607'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - a90a5785ab8ab576c9bb3c6ad621b44f/9288276243457367767
+      x-served-by:
+      - rollout-689469f6-tnlz8-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955557/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527222, "effective_date": "2003-03-07",
+        "role_id": 6181, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6950,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527223, "effective_date": "2003-03-07",
+        "role_id": 1784, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6714,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b890bef2f1cb-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:50 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - cdc7e430e6d7140025cd2d3ce343b171/4065871857043109762
+      x-served-by:
+      - rollout-689469f6-qc4w6-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955558/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527224, "effective_date": "2003-03-07",
+        "role_id": 8163, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2523,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527225, "effective_date": "2003-03-07",
+        "role_id": 8670, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5065,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8944e3df1ee-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:50 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 65b06a5c6cd1c63c3e391a29cc74f504/2127000579175474887
+      x-served-by:
+      - rollout-689469f6-twfwn-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955559/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527226, "effective_date": "2003-03-07",
+        "role_id": 7418, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2084,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527227, "effective_date": "2003-03-07",
+        "role_id": 3874, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1827,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8979ce035d8-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:51 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 3069092f86cadad450fa8dbcd26b27a5/1636702510573874652
+      x-served-by:
+      - rollout-689469f6-qlqnb-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955561/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527230, "effective_date": "2003-03-07",
+        "role_id": 4917, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4517,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527231, "effective_date": "2003-03-07",
+        "role_id": 5043, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 9228,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b89abbe9b6a9-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:51 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - e2f51a6627dfb706462b37b5a3606c1e/7722112956430339629
+      x-served-by:
+      - rollout-689469f6-kbhsk-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955560/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527228, "effective_date": "2003-03-07",
+        "role_id": 2547, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 7815,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527229, "effective_date": "2003-03-07",
+        "role_id": 6836, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5216,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b89e0aae016e-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:52 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 5165603173b9a168bfb541774e205dd1/1644512889629850442
+      x-served-by:
+      - rollout-689469f6-flft4-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955563/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527232, "effective_date": "2003-03-07",
+        "role_id": 6050, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2039,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527233, "effective_date": "2003-03-07",
+        "role_id": 6836, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5652,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8a12db86237-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:52 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - fabc0035e25de976a3659aa0018bd863/13362842716815906110
+      x-served-by:
+      - rollout-689469f6-jsrqh-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955564/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527234, "effective_date": "2003-03-07",
+        "role_id": 7868, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1032,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527235, "effective_date": "2003-03-07",
+        "role_id": 6181, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 7928,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8a4fa87014e-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:53 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - c84446a89f074573b569222698f0c57d/18043284459958744990
+      x-served-by:
+      - rollout-689469f6-97l95-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955566/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527238, "effective_date": "2003-03-07",
+        "role_id": 3874, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6989,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527239, "effective_date": "2003-03-07",
+        "role_id": 6050, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8404,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8a84a5c00e2-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:53 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - b3f267ed30a0eb0005a0e9f515099e25/17173071966076690135
+      x-served-by:
+      - rollout-689469f6-cr8tn-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955565/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527236, "effective_date": "2003-03-07",
+        "role_id": 6836, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8184,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527237, "effective_date": "2003-03-07",
+        "role_id": 6181, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 9138,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8ac0e715efb-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:54 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - e20224d82805f62319a2ae847411c962/2968419290306329683
+      x-served-by:
+      - rollout-689469f6-8bvqv-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955567/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527240, "effective_date": "2003-03-07",
+        "role_id": 5043, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1400,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527241, "effective_date": "2003-03-07",
+        "role_id": 8163, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4913,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8aef8770176-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:54 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 689f3094e9bc589e5852a7821f402695/5267070869271208670
+      x-served-by:
+      - rollout-689469f6-jctxf-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955568/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527242, "effective_date": "2003-03-07",
+        "role_id": 3737, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 891,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527243, "effective_date": "2003-03-07",
+        "role_id": 4360, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5112,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8b1ee490a2a-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:55 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '621'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 819d7d8974b2c05141b19d9d18b89737/13867475803931841456
+      x-served-by:
+      - rollout-689469f6-8s2d5-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955569/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527244, "effective_date": "2003-03-07",
+        "role_id": 8670, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 7157,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527245, "effective_date": "2003-03-07",
+        "role_id": 4610, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6545,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8b4ec3d1b1b-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:55 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 2a541a0bf3acbc6a7eea3548ea91bba5/14478023652117369037
+      x-served-by:
+      - rollout-689469f6-hhk87-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955572/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527246, "effective_date": "2003-03-07",
+        "role_id": 731, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2813,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527247, "effective_date": "2003-03-07",
+        "role_id": 4917, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 9259,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8b8ecc9dc8f-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:56 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '621'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 47997ba4dbe306fb50fa8dbcd26b2bcf/15923081790771338580
+      x-served-by:
+      - rollout-689469f6-gczn6-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955573/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527248, "effective_date": "2003-03-07",
+        "role_id": 1784, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5783,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527249, "effective_date": "2003-03-07",
+        "role_id": 8163, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1466,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8bcc8ba2570-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:57 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - a2141d5221fff098bc92551290126c0c/3385949138648360423
+      x-served-by:
+      - rollout-689469f6-mggpt-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955574/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527250, "effective_date": "2003-03-07",
+        "role_id": 4610, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 9444,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527251, "effective_date": "2003-03-07",
+        "role_id": 7868, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4488,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8bfded4c0a7-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:57 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 42fc209f1b3639228a73b23e01a48bb5/6522246581042685373
+      x-served-by:
+      - rollout-689469f6-279pl-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955575/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527252, "effective_date": "2003-03-07",
+        "role_id": 4360, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5789,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527253, "effective_date": "2003-03-07",
+        "role_id": 6836, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8125,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8c36d5a2912-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:58 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - ff1e9541c2fb52bfd0b68100caf96bda/17484147164762256102
+      x-served-by:
+      - rollout-689469f6-lcdwp-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955576/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527254, "effective_date": "2003-03-07",
+        "role_id": 6181, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8542,
+        "enabled_days": null, "allocations": null, "created": "1980-05-29T21:23:08Z",
+        "modified": "2026-01-30T19:01:28Z"}, {"id": 30527255, "effective_date": "2003-03-07",
+        "role_id": 5043, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 3594,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8c67bd4be74-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:58 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - d35ab3a5cb047f4e96448e6dd5c3d49a/14824752021658834715
+      x-served-by:
+      - rollout-689469f6-p6zj9-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955578/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527258, "effective_date": "2003-03-07",
+        "role_id": 7418, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6545,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527259, "effective_date": "2003-03-07",
+        "role_id": 3874, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2238,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8c9bd151b29-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:59 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - f4c383968868f86621c544d97cebe08b/12751981485523248791
+      x-served-by:
+      - rollout-689469f6-b547s-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955577/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527256, "effective_date": "2003-03-07",
+        "role_id": 8163, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2957,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527257, "effective_date": "2003-03-07",
+        "role_id": 1784, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4888,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8ccc95e1352-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:06:59 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 4126a3e9ac728a01f1b1d9d97fedb27a/16929795563559177096
+      x-served-by:
+      - rollout-689469f6-d5x9d-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955579/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527260, "effective_date": "2003-03-07",
+        "role_id": 2547, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2487,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527261, "effective_date": "2003-03-07",
+        "role_id": 3874, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5216,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8cfeb616eae-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:00 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 09ddd221b2268a3ca9cd385e4ee13631/247415578186052218
+      x-served-by:
+      - rollout-689469f6-j664j-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955580/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527262, "effective_date": "2003-03-07",
+        "role_id": 4917, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 9507,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527263, "effective_date": "2003-03-07",
+        "role_id": 1784, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6043,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8d2fa9a4585-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:00 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - a9cd86ae1c693066bc92551290126433/9952110801718358714
+      x-served-by:
+      - rollout-689469f6-5vbwj-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955581/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527264, "effective_date": "2003-03-07",
+        "role_id": 6050, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6907,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527265, "effective_date": "2003-03-07",
+        "role_id": 5043, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8621,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8d6fbe099bf-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:01 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - d6e4e85543c83486a284da855b001b8d/91195488758483391
+      x-served-by:
+      - rollout-689469f6-5bd7t-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955582/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527266, "effective_date": "2003-03-07",
+        "role_id": 7868, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8991,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527267, "effective_date": "2003-03-07",
+        "role_id": 6181, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 3372,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8da4fca02fd-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:01 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - e4e31e8704e482afdd1a6883edaff54c/7683134740254310060
+      x-served-by:
+      - rollout-689469f6-2vww9-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955583/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527268, "effective_date": "2003-03-07",
+        "role_id": 6836, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4888,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527269, "effective_date": "2003-03-07",
+        "role_id": 8163, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8212,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8ddaa2702f6-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:02 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - bc12040d4d05fd8cc44d225ca15b1a34/3665826922757900626
+      x-served-by:
+      - rollout-689469f6-t9wms-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955584/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527270, "effective_date": "2003-03-07",
+        "role_id": 3874, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8216,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527271, "effective_date": "2003-03-07",
+        "role_id": 4610, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6201,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8e12afe645f-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:03 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - b140060282a9fd5028302b1b5f747089/14584848492485979222
+      x-served-by:
+      - rollout-689469f6-zttb5-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955585/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527272, "effective_date": "2003-03-07",
+        "role_id": 5043, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6864,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527273, "effective_date": "2003-03-07",
+        "role_id": 7418, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2963,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8e44a56402c-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:03 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - dced0aa493bb56f83da8ba91d4a89de6/9353747155752262352
+      x-served-by:
+      - rollout-689469f6-4jhg2-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955586/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527274, "effective_date": "2003-03-07",
+        "role_id": 3737, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6010,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527275, "effective_date": "2003-03-07",
+        "role_id": 2547, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4289,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8e718075f4a-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:03 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 3de92605094f0ba07eea3548ea91bcb1/7024706994089071656
+      x-served-by:
+      - rollout-689469f6-kcx6z-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955588/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527278, "effective_date": "2003-03-07",
+        "role_id": 731, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 3943,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527279, "effective_date": "2003-03-07",
+        "role_id": 4917, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6303,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8ea3c661ac9-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:04 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '621'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - adc8c99a47506d74364fb6f2db9e2074/11264219808655725316
+      x-served-by:
+      - rollout-689469f6-wkpd5-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955587/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527276, "effective_date": "2003-03-07",
+        "role_id": 8670, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 524,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527277, "effective_date": "2003-03-07",
+        "role_id": 8163, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2791,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8ed6d5c228d-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:04 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '621'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 84f505e206157c18e386ce5e4380a966/13752640492972725000
+      x-served-by:
+      - canary-5644fc589-rjw2w-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955589/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527280, "effective_date": "2003-03-07",
+        "role_id": 1784, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8115,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527281, "effective_date": "2003-03-07",
+        "role_id": 6050, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 9259,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8f14fe9af0b-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:05 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 9a0fc74d8c2b02e861f4c4a3033bf5bd/15099194939687434922
+      x-served-by:
+      - rollout-689469f6-bkvrd-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955590/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527282, "effective_date": "2003-03-07",
+        "role_id": 4610, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 883,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527283, "effective_date": "2003-03-07",
+        "role_id": 731, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5307,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8f48ffc0134-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:06 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '620'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - fa4c1115910936de2f05e5c4cd25a5fc/5940282843581469040
+      x-served-by:
+      - rollout-689469f6-qqgj4-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955591/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527284, "effective_date": "2003-03-07",
+        "role_id": 4360, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 3373,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527285, "effective_date": "2003-03-07",
+        "role_id": 731, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5206,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8f81b978913-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:06 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '621'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 4f6a1ad0fca293d62fc7072620cb0ff5/5140272490633672371
+      x-served-by:
+      - rollout-689469f6-27gc5-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955592/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527286, "effective_date": "2003-03-07",
+        "role_id": 6181, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6792,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527287, "effective_date": "2003-03-07",
+        "role_id": 1784, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 7157,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8fb6c1f7a84-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:07 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 602f6c1678a0991beb35453cd4df9f72/17876313592363868051
+      x-served-by:
+      - rollout-689469f6-phx54-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955593/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527288, "effective_date": "2003-03-07",
+        "role_id": 8163, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5319,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527289, "effective_date": "2003-03-07",
+        "role_id": 1784, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5613,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b8feb8039ddf-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:07 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - a6c257246448fa2620dce405ed478c6d/17726819976982065074
+      x-served-by:
+      - rollout-689469f6-pchtv-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955594/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527290, "effective_date": "2003-03-07",
+        "role_id": 7418, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4551,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527291, "effective_date": "2003-03-07",
+        "role_id": 1784, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1760,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b9022ef3adc0-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:08 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 5f2febac679b494a6bd17b06b6f682bc/16375715331568677091
+      x-served-by:
+      - canary-5644fc589-k482m-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955595/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527292, "effective_date": "2003-03-07",
+        "role_id": 2547, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8210,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527293, "effective_date": "2003-03-07",
+        "role_id": 1784, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2430,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b9055f691a8a-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:08 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 7d09624f5561f5dc0884996b564fbbaa/11251580104448129395
+      x-served-by:
+      - rollout-689469f6-ldfdk-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955596/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527294, "effective_date": "2003-03-07",
+        "role_id": 4917, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4414,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527295, "effective_date": "2003-03-07",
+        "role_id": 731, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 3424,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b9086de4f1e6-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:09 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '621'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 4c958c2533dd1bec8bd5116e4f75f70c/1642543775719209082
+      x-served-by:
+      - rollout-689469f6-5z62z-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955597/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527296, "effective_date": "2003-03-07",
+        "role_id": 6050, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4838,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}, {"id": 30527297, "effective_date": "2003-03-07",
+        "role_id": 8670, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 7815,
+        "enabled_days": null, "allocations": null, "created": "1985-09-07T07:55:51Z",
+        "modified": "2026-01-30T19:01:29Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b90b6a394b46-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:09 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - b48426da8b9470b9318527de7931db25/2436071662793725852
+      x-served-by:
+      - rollout-689469f6-j664j-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955598/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527298, "effective_date": "2003-03-07",
+        "role_id": 7868, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 2170,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}, {"id": 30527299, "effective_date": "2003-03-07",
+        "role_id": 2547, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5470,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b90e7c5e8782-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:10 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - ecde140602ad81448b880f6d05f4bf72/10884654860505417646
+      x-served-by:
+      - rollout-689469f6-sqgn2-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955599/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527300, "effective_date": "2003-03-07",
+        "role_id": 6836, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8945,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}, {"id": 30527301, "effective_date": "2003-03-07",
+        "role_id": 8163, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5159,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b911dc551cdb-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:10 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 8d649ccd6ba0126af417c6d69faea17f/9672322737083877082
+      x-served-by:
+      - rollout-689469f6-6brmc-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955600/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527302, "effective_date": "2003-03-07",
+        "role_id": 3874, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8621,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}, {"id": 30527303, "effective_date": "2003-03-07",
+        "role_id": 4610, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4099,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b9153b4845d9-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:11 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 0d8391a5c598623906a5dc9b7dc62401/17686924473928731704
+      x-served-by:
+      - rollout-689469f6-sddct-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955601/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527304, "effective_date": "2003-03-07",
+        "role_id": 5043, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1028,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}, {"id": 30527305, "effective_date": "2003-03-07",
+        "role_id": 6050, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 4498,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b918df71abfb-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:11 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 30f3ce9dcc8c0838f573ecd9ccf03aa3/1592721786848991775
+      x-served-by:
+      - rollout-689469f6-st57x-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955602/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527306, "effective_date": "2003-03-07",
+        "role_id": 3737, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 9077,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}, {"id": 30527307, "effective_date": "2003-03-07",
+        "role_id": 6181, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 9138,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b91cae6b6cc5-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:12 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - b275edc8e2801aba2fc7072620cb07a2/17957030835833621101
+      x-served-by:
+      - rollout-689469f6-h95pc-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955603/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527308, "effective_date": "2003-03-07",
+        "role_id": 8670, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5987,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}, {"id": 30527309, "effective_date": "2003-03-07",
+        "role_id": 6050, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 5412,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b91fafd3ad79-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:12 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '622'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 87b808644d886e1cb9d5ce160dffd347/12874795012777535108
+      x-served-by:
+      - rollout-689469f6-twfwn-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955604/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527310, "effective_date": "2003-03-07",
+        "role_id": 731, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 1963,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}, {"id": 30527311, "effective_date": "2003-03-07",
+        "role_id": 4610, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 8854,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b922987c6231-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:13 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '621'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - b4c4b16a20e42062cc2aa6d3f183bb33/7702051412351798318
+      x-served-by:
+      - rollout-689469f6-cr4d6-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10955605/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30527312, "effective_date": "2003-03-07",
+        "role_id": 1784, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 934,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}, {"id": 30527313, "effective_date": "2003-03-07",
+        "role_id": 4360, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 6989,
+        "enabled_days": null, "allocations": null, "created": "2012-02-02T18:09:04Z",
+        "modified": "2026-01-30T19:01:30Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b9263924ddeb-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:14 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '621'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 400ce8081b345d0c63d5ccb8973791bd/15086473741531433054
+      x-served-by:
+      - rollout-689469f6-qjkgj-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - __cf_bm=cmTWuR.PEvWdHiu7j2x3qRmINuFSKdJpi_7wq61CZq4-1793995612.96164-1.0.1.1-fcfB6rBL49BhlninZqTXiH0RXS9EZCD_WBFxvIdLFJmm63k5pQATYZnOzc7Ak1Q5oTbUZIt.mNOW4R8AxnhgUixeiaPPyN06s5BCpsCpX5fSoSnL7mNwHbadyczyr_lm
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/users/10997587/wages?limit=500
+  response:
+    body:
+      string: '{"data": {"current_wages": [{"id": 30606906, "effective_date": "1993-01-20",
+        "role_id": 6050, "wage_type": "-Fallback-scrubbed-SfvIrM", "wage_cents": 628,
+        "enabled_days": null, "allocations": null, "created": "2013-01-16T18:23:13Z",
+        "modified": "2026-02-11T16:45:59Z"}], "upcoming_wages": [], "wage_type": "-Fallback-scrubbed-SfvIrM"},
+        "object": "-Fallback-scrubbed-JLTzZsqEUQ"}'
+    headers:
+      CF-RAY:
+      - a566b92958f42912-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:07:14 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '378'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - d5622453b1b6e57801ab38cc999ca646/3071918608042271172
+      x-served-by:
+      - rollout-689469f6-qlqnb-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,144 @@
+interactions:
+- request:
+    body: grant_type=client_credentials&scope=v1_access+companies%3Aread+locations%3Aread
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '79'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.34.2
+    method: POST
+    uri: https://app.7shifts.com/oauth2/token
+  response:
+    body:
+      string: '{"token_type": "-Fallback-scrubbed-iuuDPy", "expires_in": 3599, "access_token":
+        "eyJ***"}'
+    headers:
+      CF-RAY:
+      - a566b4a67e37012a-GRU
+      Cache-Control:
+      - no-store,no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 06 Nov 2026 20:04:09 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '89'
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      permissions-policy:
+      - interest-cohort=()
+      pragma:
+      - no-cache
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - ea20233681a6be1c6ff972bf7c333a30/16042046816659690916
+      x-served-by:
+      - rollout-689469f6-9xkwv-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/company/409428/departments?limit=500&modified_since=2026-01-02
+  response:
+    body:
+      string: '{"data": [{"id": 792935, "company_id": 4592, "location_id": 3661, "name":
+        "Fake-Kristen Fisher", "default": false, "deleted": null, "created": "1999-06-09T22:48:09+00:00",
+        "modified": "2026-02-05T23:07:21+00:00"}, {"id": 792936, "company_id": 4592,
+        "location_id": 3661, "name": "Fake-Christina Gamble", "default": false, "deleted":
+        null, "created": "1999-06-09T22:48:09+00:00", "modified": "2026-01-30T19:01:04+00:00"},
+        {"id": 792937, "company_id": 4592, "location_id": 9216, "name": "Fake-Cheryl
+        Weber DDS", "default": false, "deleted": null, "created": "1999-06-09T22:48:09+00:00",
+        "modified": "2026-01-30T19:01:04+00:00"}, {"id": 792938, "company_id": 4592,
+        "location_id": 9216, "name": "Fake-Christina Gamble", "default": false, "deleted":
+        null, "created": "1999-06-09T22:48:09+00:00", "modified": "2026-01-30T19:01:04+00:00"}],
+        "meta": {"cursor": {"current": "-Fallback-scrubbed-RlpEcJdjiHAaQoRpOtHBcGCNhYNrfsTd",
+        "prev": null, "next": null, "count": 9519}}, "object": "-Fallback-scrubbed-BRuPHCLgPSI"}'
+    headers:
+      CF-RAY:
+      - a566b4a9ef465c96-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:04:10 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1007'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - e10dae0fa36a784d8720d12010809c93/2946391780407946448
+      x-served-by:
+      - rollout-689469f6-csqpv-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1
