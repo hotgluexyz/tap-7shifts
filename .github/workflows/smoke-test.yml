@@ -24,7 +24,7 @@ jobs:
           uv venv .venv
           source .venv/bin/activate
           uv pip install .
-          uv pip install "git+https://github.com/hotgluexyz/hotglue-smoke-test.git@feature/hgi-11589"
+          uv pip install hotglue-smoke-test
 
       - name: Setup and run tests
         run: |
