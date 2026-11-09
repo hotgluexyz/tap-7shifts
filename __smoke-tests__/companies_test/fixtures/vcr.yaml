@@ -1,0 +1,144 @@
+interactions:
+- request:
+    body: grant_type=client_credentials&scope=v1_access+companies%3Aread+locations%3Aread
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '79'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.34.2
+    method: POST
+    uri: https://app.7shifts.com/oauth2/token
+  response:
+    body:
+      string: '{"token_type": "-Fallback-scrubbed-DOfOAT", "expires_in": 3599, "access_token":
+        "eyJ***"}'
+    headers:
+      CF-RAY:
+      - a566b48e9d0cae8a-GRU
+      Cache-Control:
+      - no-store,no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 06 Nov 2026 20:04:05 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '89'
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      permissions-policy:
+      - interest-cohort=()
+      pragma:
+      - no-cache
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - 4738cf4cb6bf43324d38401d54d36899/12136934727380918592
+      x-served-by:
+      - rollout-689469f6-mhkcw-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: https://api.7shifts.com/v2/companies?limit=500&modified_since=2026-01-02
+  response:
+    body:
+      string: '{"data": [{"id": 409428, "name": "Fake-Bruce Singleton", "uuid": "-Fallback-scrubbed-ZykYogZykUiRtymSxAAttXIlMxNGACmguWzc",
+        "country": "-Fallback-scrubbed-AM", "photo": "-Fallback-scrubbed-LZGOmflPbriiGzgxBCpXfWQ",
+        "trial": true, "plan_id": "-Fallback-scrubbed-XVKsFuVQHuuxfo", "created":
+        "2007-01-02T22:13:34+00:00", "modified": "2026-02-11T16:45:59+00:00", "expires":
+        "1999-09-12T01:04:47+00:00", "days_to_expire": 6015, "converted": null, "pos":
+        "", "status": "-Fallback-scrubbed-igoZm", "start_week_on": 9556, "meta": {"onboarding_complete":
+        true, "buy_now": true, "employee_count_range": "7509", "signup_utm_source":
+        "-Fallback-scrubbed-RplRnYcrEASvNlq", "signup_form_type": null, "utm_medium":
+        null, "utm_source": "", "signup_content_source": "", "icp_segment": "-Fallback-scrubbed-vtKTRBDgMDgDiM",
+        "ai_importer_invoked": true, "declared_number_of_locations": null, "marketing_site_visitor_uuid":
+        null, "pricing_test_aggregate_id": "5212", "paid_converted": null, "trial_checklist_stored_locally":
+        true}, "active": true, "coupon": ""}], "object": "-Fallback-scrubbed-BdmynEHzR"}'
+    headers:
+      CF-RAY:
+      - a566b491c9423729-GRU
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 06 Nov 2026 20:04:06 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1084'
+      permissions-policy:
+      - interest-cohort=()
+      referrer-policy:
+      - no-referrer-when-downgrade
+      strict-transport-security:
+      - max-age=31536000
+      vary:
+      - accept-encoding
+      via:
+      - 1.1 google
+      x-api-version:
+      - '2026-02-01'
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-request-id:
+      - e1460930694a3e1db2c0cd2a78a764a6/17156859224283738832
+      x-served-by:
+      - rollout-689469f6-h9trh-031f650
+      x-xss-protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1
